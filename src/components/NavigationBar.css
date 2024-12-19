@@ -1,0 +1,19 @@
+.navigation-bar .nav-link {
+  color: rgba(88, 45, 207, 0.934);
+  /* padding: 0 8px; */
+}
+  
+  .navigation-bar .nav-link:hover {
+    color: rgb(38, 176, 231);
+    text-decoration: underline;
+  }
+  
+  .nav-links .nav-link {
+    padding: 0 4px;
+  }
+  .active-link{
+    color: skyblue !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  

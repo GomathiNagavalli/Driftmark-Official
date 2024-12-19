@@ -1,0 +1,22 @@
+/* h1,h2{
+    color: rgba(5, 5, 124, 0.882); 
+}
+p{
+    
+    color: rgba(53, 53, 148, 0.882); 
+    font-size: 18px;
+}
+h3{
+    color: #02025fe1; 
+} */
+.contact-container{
+    background-color: rgba(2, 2, 95, 0.882); 
+    border-radius: 10px;
+    color:white;   
+    text-align: center;
+    padding:30px 0px;
+}
+.layout{
+    border: 3px solid #02025fe1;
+    border-radius: 10px;
+}
