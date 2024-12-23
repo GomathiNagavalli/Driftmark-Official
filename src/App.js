@@ -7,8 +7,8 @@ import RootLayout from './RootRout/RootLayout';
 import Solutions from './components/Solutions';
 import Cloud from './components/Cloud';
 import Enterprise from './components/Enterprise';
-import Advantage from './components/Advantage';
-import Resources from './components/Resources';
+import About from './components/About';
+import Services from './components/Services';
 import Contact from './components/Contact';
 
 
@@ -19,8 +19,8 @@ const App = () => {
           <Route index element={<Solutions />} />
           <Route  path='cloud' element={<Cloud />}/>
           <Route path='enterprise' element={<Enterprise />}/>
-          <Route path='advantage' element={<Advantage />}/>
-          <Route path='resources' element={<Resources />}/>
+          <Route path='About' element={<About />}/>
+          <Route path='Services' element={<Services />}/>
           <Route path='contact' element={<Contact />}/>
       </Route>
     )

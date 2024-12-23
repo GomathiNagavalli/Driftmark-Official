@@ -1,21 +1,34 @@
-import React from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
 function ContactForm() {
   return (
     <Container className="">
-        <h4 style={{color:'#02025fe1'}}>Get a Complimentary Consultation</h4>
-        <p style={{color: 'rgba(53, 53, 148, 0.882)' }}>Fill out the form below to get a complimentary consultation and find out how we can make your technology hassle-free!</p>
+      <p style={{ color: "rgba(53, 53, 148, 0.882)" }}>
+        Fill out the form below to schedule a complimentary consultation and
+        learn how we can help you achieve your technology goals.
+      </p>
       <Form>
         {/* Input Fields */}
-        {['First Name', 'Last Name', 'Email', 'Phone', 'Company', 'Message'].map((label, index) => (
-          <Form.Group controlId={label.toLowerCase().replace(" ", "")} key={index} className="mb-3">
-            <Form.Label style={{ color: 'navy' }}>{label}</Form.Label>
-            <Form.Control 
-              type={label === 'Message' ? 'textarea' : 'text'} 
-              placeholder={`Enter ${label.toLowerCase()}`} 
-              rows={label === 'Message' ? 3 : undefined}
-              style={{ borderColor: '#5a75a9' }}
+        {[
+          "First Name",
+          "Last Name",
+          "Email",
+          "Phone",
+          "Company",
+          "Message",
+        ].map((label, index) => (
+          <Form.Group
+            controlId={label.toLowerCase().replace(" ", "")}
+            key={index}
+            className="mb-3"
+          >
+            <Form.Label style={{ color: "navy" }}>{label}</Form.Label>
+            <Form.Control
+              type={label === "Message" ? "textarea" : "text"}
+              placeholder={`Enter ${label.toLowerCase()}`}
+              rows={label === "Message" ? 3 : undefined}
+              style={{ borderColor: "#5a75a9" }}
             />
           </Form.Group>
         ))}

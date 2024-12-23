@@ -2,24 +2,28 @@ import React, { useState } from 'react';
 import  Blog  from './Blog';
 // import { CaseStudies } from './CaseStudies';
 import  Downloads  from './Downloads';
-import CaseStudies from './CaseStudies';
+// import CaseStudies from './CaseStudies';
+import Contact from '../components/Contact';
 import { Container } from 'react-bootstrap';
+import './Solutions.css'
 
-function Resources() {
+
+function Services() {
   const [activeLink, setActiveLink] = useState('blog');
 
   // Map link names to components
   const components = {
     blog: Blog,
-    CaseStudies: CaseStudies,
     downloads: Downloads,
+    ContactNow: Contact,
   };
 
   // Get the current component to render
   const ActiveComponent = components[activeLink];
 
+
   return (
-    <Container>
+    <Container className='mt-3'>
       {/* Navigation Links */}
       <nav>
         <ul className='list-unstyled d-flex gap-2'>
@@ -34,10 +38,10 @@ function Resources() {
       </nav>
 
       {/* Dynamic Component Rendering */}
-      <span style={{color:'skyblue'}}>{activeLink.charAt(0).toUpperCase() + activeLink.slice(1)}</span>
+      <span style={{color:'skyBlue'}}>{activeLink.charAt(0).toUpperCase() + activeLink.slice(1)}</span>
       <ActiveComponent />
     </Container>
   );
 }
 
-export default Resources;
+export default Services;

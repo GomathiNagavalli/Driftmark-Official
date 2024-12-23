@@ -7,8 +7,8 @@ import Train from "../assets/train.jpg";
 const Downloads = () => {
   return (
     <>
-      <Row className="my-4">
-        <Col md={6} className="my-4">
+      <Row className="">
+        <Col md={6} className="mb-3">
           <Image src={Refix} style={{width:'100px', height:'100px'}}/>
           <h3>Refix Systems</h3>
           <p style={{fontSize:'14px'}}>

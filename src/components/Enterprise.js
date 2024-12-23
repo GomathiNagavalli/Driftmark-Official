@@ -1,49 +1,57 @@
 import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
-import Enterpriseimg from "../assets/enterprise.png";
+// import Enterpriseimg from "../assets/enterprise.png";
 import "../components/Solutions.css";
-import ITsolution from "../assets/ITsolution.png";
-import cloud2 from "../assets/cloud2.png";
+// import ITsolution from "../assets/ITsolution.png";
+// import cloud2 from "../assets/cloud2.png";
+import { useNavigate } from "react-router-dom";
+import Enterpriseimg2 from "../assets/Enterpriseimg.jpg";
 
 const Enterprise = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <Container className="">
+      <Container className="mt-3">
         <Row>
           <Col md={6}>
-            <span style={{ color: "skyblue" }}>ENTERPRISE SOLUTIONS</span>
-            <h2 className="mt-3">Supplemental IT For IT</h2>
-            <h2>Experts</h2>
+            {/* <span style={{ color: "skyblue" }}>ENTERPRISE SOLUTIONS</span> */}
+            <h2 className="mt-3"> Expert IT Support for</h2>
+            <h2>In-House Teams</h2>
             <p className="mt-3">
-              Some organizations have the resources for a fully realized IT
-              department, equipped to handle technical support internally.
-              Others look to outsourcing to fulfill their IT needs, seeking a
-              third party provider to step in and take the lead. But for those
-              businesses finding themselves somewhere in the middle: let us take
-              some of the weight off your shoulders.
+              Not every organization needs a full-scale IT outsourcing solution,
+              but nor do they have all the expertise in-house. If your business
+              falls somewhere in between, our supplemental IT services are here
+              to help. We'll work alongside your internal IT team to fill gaps,
+              provide specialized expertise, and share the workload – so you can
+              focus on what matters most.
             </p>
           </Col>
           <Col md={6}>
             <div className="text-center">
               <Image
-                src={Enterpriseimg}
+                src={Enterpriseimg2}
                 fluid
+                rounded
                 style={{ width: "400px", height: "300px" }}
               />
             </div>
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container className="mt-3">
         <Row>
           <Col>
-            <div className="text-center">
-              <h2>Call In The IT Reinforcements</h2>
+            <div className="text-center ">
+              <h2 className="display-6 fw-bold">
+                {" "}
+                Augment Your IT Team with Expert Support
+              </h2>
               <p>
-                We offer enterprise-level expertise for businesses with 100+
-                seats and a staff of dedicated IT professionals. Our goal: to
-                help shoulder the day-to-day responsibilities weighing down your
-                workflow and your business's productivity.
+                Is your in-house IT team overwhelmed? We provide
+                enterprise-grade expertise to businesses with 100+ users,
+                helping to alleviate the daily burden on your IT staff. Our goal
+                is to boost your productivity and streamline workflow, so you
+                can focus on driving business growth
               </p>
             </div>
           </Col>
@@ -56,70 +64,66 @@ const Enterprise = () => {
             padding: "30px",
           }}
         >
-          <h2>A Strategic Perspective For Your</h2>
-          <h2> Business</h2>
-          <p className="mt-3">
-            Together, let’s generate a tactical, deliberate plan for your
-            organization's approach to IT. We'll step in with technical
-            expertise that helps your projects ladder up to your
-            expectations—and give your business the IT support it needs to
-            thrive.
+          <h2>Aligning IT with Your Business Vision</h2>
+          {/* <h2> Business</h2> */}
+          <p className="mt-3 lead">
+            Let's collaborate to develop a strategic IT roadmap tailored to your
+            organization's unique goals. Our technical experts will help you
+            bridge the gap between IT and business objectives, ensuring your
+            projects drive meaningful outcomes and propel your business forward.
           </p>
         </div>
       </Container>
-      <Container className="contact-container">
-              <div>
-                <h1 style={{ color: "white" }}>We would love to hear how we</h1>
-                <h1 style={{ color: "white" }}> could help your business.</h1>
-                <Button className="mt-3" href="/contact">Contact Us Today</Button>
-              </div>
-            </Container>
-      <Container>
-        <Row>
-          <Col>
-            <div className="text-center">
-              <h3 className="my-3 ">Our Advantage</h3>
-              <p>
-                Our expertise keeps us (and our clients) confident in what we
-                do. Our custom IT services are backed by 15 years of experience
-                and a dedicated, accessible team that's always just a call away.
-              </p>
+      <Container className="contact-container my-5">
+        <Row className="justify-content-center align-items-center">
+          <Col md={8}>
+            <div>
+              <h1 style={{ color: "white" }}>
+                Let's discuss how we can support{" "}
+              </h1>
+              <h1 style={{ color: "white" }}>your business goals.</h1>
             </div>
+          </Col>
+          <Col>
+            <Button className="mt-3" href="/contact">
+              Contact Us Today
+            </Button>
           </Col>
         </Row>
+       
       </Container>
       <Container>
-        <Row g={3}>
-          <Col className="layout p-4 m-3">
-            <div className="text-center">
-              <Image
-                src={ITsolution}
-                style={{ width: "200px", height: "200px" }}
-              ></Image>
-            </div>
-            <h3 className="my-2">IT SOLUTIONS</h3>
+        <Row>
+          <Col md={4}>
+            <h3>Flutter MobileApp Development</h3>
             <p>
-              For over two decades, we’ve stepped in with managed solutions to
-              provide businesses with a firm IT foundation to stand on. We’ll
-              protect your business and your data.
+              Flutter is an open-source mobile app development framework created
+              by Google. It allows developers to build natively compiled
+              applications for mobile, web, and desktop from a single codebase.
             </p>
-            <Button>How It Works</Button>
           </Col>
-          <Col className="layout p-4 m-3">
-            <div className="text-center">
-              <Image
-                src={cloud2}
-                style={{ width: "200px", height: "200px" }}
-              ></Image>
-            </div>
-            <h3 className="my-2">Cloud Technology</h3>
+          <Col md={4}>
+            <h3>Our Expertise in Frontend Development</h3>
             <p>
-              As seasoned experts in cloud computing, we’ll help you access your
-              data whenever and wherever you need. Having dedicated virtual
-              servers in a secure, SSAE 16 certified data center doesn't hurt
-              either.
+              {" "}
+              Frontend frameworks like React, Angular, and Vue.js enable
+              developers to build complex and scalable applications.
+              Additionally, considerations such as responsive web design,
+              accessibility, and performance optimization are essential to
+              ensure a seamless user experience across various devices and
+              browsers.{" "}
             </p>
-            <Button>How It Works</Button>
+          </Col>
+
+          <Col nd={4}>
+            <h3>Experts In FullStack Development</h3>
+            <p>
+              Designing and developing the user interface and user experience
+              (UI/UX) using frontend technologies like HTML, CSS, and
+              JavaScript, as well as building the server-side logic, database
+              integration, and API connectivity using backend technologies like
+              Node.js, Ruby on Rails, and Python.{" "}
+            </p>
           </Col>
         </Row>
       </Container>

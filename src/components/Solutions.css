@@ -20,3 +20,12 @@ h3{
     border: 3px solid #02025fe1;
     border-radius: 10px;
 }
+.background-image {
+    background-image: url('../assets/CloudBgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 89vw;
+    border-radius: 10px;
+  }
+ 

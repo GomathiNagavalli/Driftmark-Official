@@ -1,84 +1,92 @@
 import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
-import solution1 from "../assets/solution1.png";
-import solution2 from "../assets/solution2.jpg";
-import solution3 from "../assets/solution3.png";
-import solution4 from "../assets/solution4.png";
-import '../components/Solutionspage.css';
+import "../components/Solutionspage.css";
+import Carousel from "react-bootstrap/Carousel";
+import courosalboy from "../assets/courosalboy.jpg";
+import courosalsecurity from "../assets/courosalsecurity.jpg";
+// import courosal from '../assets/courosal.jpg';
+import coursalNew from "../assets/courosalNew.jpg";
 
 const SolutionsPage = () => {
   return (
     <>
-      <Container>
-        <h2 className="text-center">Custom Solution For Any Need</h2>
+      <Container className="my-5">
+        <h2 className="text-center display-6">
+          Tailored Solutions to Meet Your
+        </h2>
+        <h2 className="text-center display-6"> Unique Requirements</h2>
         <p className="text-center">
-          Our game plan begins with you: your needs, your goals, and the support
-          you need to keep your business thriving. So, we’ll kick off our
-          partnership with a close look at your current state of affairs to
-          develop a custom strategy and ensure our services check off all the
-          right boxes.
+          Your success is our top priority. We start by understanding your
+          unique needs, aspirations, and challenges. Together, we'll conduct a
+          thorough assessment of your current situation to craft a personalized
+          plan that aligns with your goals and ensures our services deliver the
+          results you need to drive your business forward.
         </p>
-        <Row>
-          <Col md={6}>
-            <div className="flex-container">
-              <div className="image-container">
-                <Image src={solution1} className="responsive-image"/>
-              </div>
-              <div className="text-container">
-                <h3>Backup & Recover</h3>
-                <p >
-                  Your data is safe with us—and our ironclad backup system
-                  that’s anything but obsolete. Lost data just isn’t a concept
-                  we’re familiar with.
-                </p>
-              </div>
-            </div>
-          </Col>
-          <Col md={6}>
-            <div className="flex-container">
-              <div  className="image-container" >
-                <Image src={solution2} className="responsive-image"/>
-              </div>
-              <div className="text-container">
-                <h3>Cybersecurity</h3>
-                <p>
-                  We’ve got your back with 24/7 security to safeguard your
-                  network. Our team of experts based in New England are always
-                  just a call away.
-                </p>
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={6}>
-            <div className="flex-container">
-              <div className="image-container">
-                <Image src={solution3} className="responsive-image" />
-              </div>
-              <div className="text-container">
-                <h3>Workstation Management</h3>
-                <p>
-                  Protect the place where your goals turn into results. We’ll
-                  maintain, monitor, and protect the workstation tools that keep
-                  your business productive, including computers, phone systems,
-                  printer networks, and more.
-                </p>
-              </div>
-            </div>
-          </Col>
-          <Col md={6}>
-            <div className="flex-container">
-              <div className="image-container">
-                <Image src={solution4} className="responsive-image" />
-              </div>
-              <div className="text-container">
-                <h3>Cloud Computing</h3>
-                <p>
-                We keep things “cloud-first,“ meaning your network will stay up and running regardless of what unexpected challenges pop up today or tomorrow.
-                </p>
-              </div>
-            </div>
+
+        <Row className="justify-content-center align-items-center my-3">
+          {/* <div className="text-center"> */}
+          <Col lg={10}>
+            <Carousel>
+              <Carousel.Item>
+                <Image
+                  src={courosalboy}
+                  fluid
+                  style={{ filter: "brightness(50%)", objectFit: "cover" }}
+                />
+                <Carousel.Caption>
+                  <h1 style={{ color: "white" }}>
+                    Transform Your Online Presence
+                     {/* with Custom Web Development
+                    Solutions */}
+                  </h1>
+                  <p style={{ color: "white" }}>
+                    Elevate your business with a stunning, user-friendly, and
+                    responsive website that drives engagement and conversions.
+                    {/* Our expert web developers craft tailored solutions using the
+                    latest technologies to help you stand out in the digital
+                    landscape. */}
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  src={coursalNew}
+                  fluid
+                  style={{ filter: "brightness(50%)", objectFit: "cover" }}
+                />
+                <Carousel.Caption>
+                  <h1 style={{ color: "white" }}>
+                    Create visually stunning mobile apps
+                    with our expert
+                  </h1>
+                  <p style={{ color: "white" }}>
+                    {/* Flutter app development services.  */}
+                    Our team leverages the
+                    power of Flutter to deliver seamless, cross-platform
+                    experiences that delight users and drive business success.
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Image
+                  src={courosalsecurity}
+                  fluid
+                  style={{ filter: "brightness(50%)", objectFit: "cover" }}
+                />
+                <Carousel.Caption>
+                  <h1 style={{ color: "white" }}>
+                    Protecting Your Network Around the Clock
+                  </h1>
+                  <p style={{ color: "white" }}>
+                    Enjoy unparalleled peace of mind with our 24/7 security
+                    services, designed to safeguard your network from threats.
+                    {/* Our team of New England-based experts is always on standby,
+                    just a phone call away, to provide prompt support and ensure
+                    your business stays secure. */}
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
           </Col>
         </Row>
       </Container>

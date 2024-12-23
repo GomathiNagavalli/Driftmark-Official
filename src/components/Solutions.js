@@ -1,102 +1,111 @@
 import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
-import solutin_img from "../assets/SolutionsImg.png";
 import "../components/Solutions.css";
 import SolutionsPage from "./SolutionsPage";
-// import { Button } from 'bootstrap';
-import cloud from "../assets/cloud.jpg";
-import cloud2 from "../assets/cloud2.png";
 import { useNavigate } from "react-router-dom";
-// import Footer from "./Footer";
+
+import Frontpage2 from "../assets/Frontpage2.jpg";
 
 const Solutions = () => {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <Container>
-        <Row>
+        <h1 className="fw-bold display-5 mt-3">
+          Let Us Bring Your Product to Life
+        </h1>
+        <Row className="mt-4">
           <Col md={6}>
-            <span style={{ color: "skyblue" }}>IT SOLUTIONS</span>
-            <h1> Small To Midsize </h1>
-            <h1> Businesses, Meet Your </h1>
-            <h1>New IT Department</h1>
+            <h2 className="display-6">
+              Expert Software Development & Consulting Services
+            </h2>
+
             <p>
-              Your focus is on building your business. We’ll make sure your IT
-              infrastructure is up to the task. Our experienced team offers
-              proven & certified managed services, data backup, and cloud
-              computing support to keep your business growing strong.
+              To carry on the business of dealing and maintenance of computer
+              hardware, computer systems and assemble data processors, program
+              designs and to buy, sell or otherwise deal in such hardware and
+              software packages and all types of tabulating machine, accounting
+              machines, computerized telecommunication systems and network,
+              their components, spare parts, equipments and devices.
             </p>
           </Col>
           <Col md={6}>
-            <Image src={solutin_img} fluid />
+            <Image src={Frontpage2} rounded fluid className="shadow" />
           </Col>
         </Row>
       </Container>
+
+      {/* ///////////////////// */}
       <SolutionsPage />
       <Container className="contact-container">
         <div>
-          <h1 style={{ color: "white" }}>We would love to hear how we</h1>
-          <h1 style={{ color: "white" }}> could help your business.</h1>
-          <Button className="mt-3" onClick={()=>navigate('/contact')}>Contact Us Today</Button>
+          <h1 style={{ color: "white" }}>We're Dedicated to Your</h1>
+          <h1 style={{ color: "white" }}>Business Success</h1>
+          <Button className="mt-3" onClick={() => navigate("/contact")}>
+            Contact Us Today
+          </Button>
         </div>
       </Container>
       <Container className="mt-3">
         <Row>
           <Col md={6}>
-            <h3 className="mb-3">No-Surprise Pricing</h3>
+            <h3 className="mb-3">Transparent Pricing for Peace of Mind</h3>
             <p>
-              In the event that your network is down or a server fails, the last
-              thing you’ll need on your plate is an unexpected fee to combat
-              those challenges. That’s why we fix our pricing at a single
-              monthly rate to cover all the ups and downs. Even when your tech
-              isn’t predictable, our pricing always will be.
+              When unexpected IT issues arise, the last thing you need is a
+              surprise bill. That's why we offer a simple, all-inclusive monthly
+              rate that covers all your IT needs, regardless of the unexpected
+              twists and turns. With our predictable pricing, you can budget
+              with confidence and focus on what matters most - running your
+              business.
             </p>
-            <Button>Get A Free Consulting</Button>
+            <Button onClick={() => navigate("/contact")}>
+              Get A Free Consulting
+            </Button>
           </Col>
           <Col md={6}>
-            <h3 className="mb-3 ">Our Advantage</h3>
+            <h3 className="mb-3 ">The Driftmark Difference</h3>
             <p>
-              Our expertise keeps us (and our clients) confident in what we do.
-              Our custom IT services are backed by 15 years of experience and a
-              dedicated, accessible team that's always just a call away.
+              At Driftmark, expertise and experience come together to deliver
+              unparalleled IT solutions. Our tailored services are backed by a
+              team of dedicated experts who are always available to provide
+              guidance and support. With Driftmark, you can trust that you're in
+              good hands.
             </p>
           </Col>
         </Row>
       </Container>
-      <Container >
-        <Row g={3}>
-          <Col className="layout p-4 m-3">
-           <div className="text-center">
-           <Image
-              src={cloud}
-              style={{ width: "200px", height: "200px" }}
-            ></Image>
-           </div>
-            <h3 className="my-2">Cloud Technology</h3>
+      <Container>
+        <Row className="layout my-4 py-3">
+        
+          <Col   md={6}>
+            <h3 className="my-2"> Unlock the Power of Cloud Technology</h3>
             <p>
-              As seasoned experts in cloud computing, we’ll help you access your
-              data whenever and wherever you need. Having dedicated virtual
-              servers in a secure, SSAE 16 certified data center doesn't hurt
-              either.
+              As cloud computing specialists, we empower you to access your data
+              from anywhere, at any time. Our secure and reliable solutions
+              feature dedicated virtual servers hosted in a state-of-the-art,
+              SSAE 16 certified data center, giving you peace of mind and
+              unparalleled flexibility.
             </p>
-            <Button>How It Works</Button>
+            <Button on Click={() => navigate("/cloud")}>
+              How It Works
+            </Button>
           </Col>
-          <Col  className="layout p-4 m-3">
-          <div className="text-center">
-          <Image src={cloud2} style={{ width: "200px", height: "200px" }}></Image>
-          </div>
-            
-            <h3 className="my-2">Enterprise-Level Expertise</h3>
+          <Col md={6} >
+          {/* className="layout p-4 m-3" */}
+            <h3 className="my-2 ">
+              Expert Support for Ambitious Organizations
+            </h3>
             <p>
-              We’re IT people for IT departments, meaning we’re always ready to
-              step in and assist teams at larger organizations whenever they
-              might need a little extra support to keep your business growing strong.
+              As seasoned IT professionals, we're uniquely equipped to augment
+              the capabilities of in-house IT teams at larger enterprises.
+              Whether you need specialized expertise or an extra layer of
+              support, we're here to help you overcome challenges and drive
+              business growth.
             </p>
-            <Button>Reinforce Your IT</Button>
+            <Button onClick={() => navigate("/contact")}>Get Your Team</Button>
           </Col>
         </Row>
       </Container>
-      {/* <Footer /> */}
     </>
   );
 };

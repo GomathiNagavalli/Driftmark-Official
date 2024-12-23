@@ -5,7 +5,7 @@
   
   .navigation-bar .nav-link:hover {
     color: rgb(38, 176, 231);
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   .nav-links .nav-link {
