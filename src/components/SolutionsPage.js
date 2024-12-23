@@ -15,7 +15,7 @@ const SolutionsPage = () => {
           Tailored Solutions to Meet Your
         </h2>
         <h2 className="text-center display-6"> Unique Requirements</h2>
-        <p className="text-center">
+        <p className="text-center mb-5">
           Your success is our top priority. We start by understanding your
           unique needs, aspirations, and challenges. Together, we'll conduct a
           thorough assessment of your current situation to craft a personalized

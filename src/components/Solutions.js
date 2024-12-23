@@ -3,24 +3,25 @@ import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import "../components/Solutions.css";
 import SolutionsPage from "./SolutionsPage";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Frontpage2 from "../assets/Frontpage2.jpg";
 
 const Solutions = () => {
   const navigate = useNavigate();
+  // const navigate2 = useNavigate();
   return (
     <>
       <Container>
         <h1 className="fw-bold display-5 mt-3">
           Let Us Bring Your Product to Life
         </h1>
-        <Row className="mt-4">
+        <Row className="my-4 ">
           <Col md={6}>
-            <h2 className="display-6">
+            <h2 className="text-muted">
               Expert Software Development & Consulting Services
             </h2>
 
-            <p>
+            <p className="">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program
               designs and to buy, sell or otherwise deal in such hardware and
@@ -76,31 +77,36 @@ const Solutions = () => {
       </Container>
       <Container>
         <Row className="layout my-4 py-3">
-        
-          <Col   md={6}>
-            <h3 className="my-2"> Unlock the Power of Cloud Technology</h3>
+          <Col md={6}>
+            <h3 className="my-2">
+              {" "}
+              Building Dynamic Web Applications with ReactJS
+            </h3>
             <p>
-              As cloud computing specialists, we empower you to access your data
-              from anywhere, at any time. Our secure and reliable solutions
-              feature dedicated virtual servers hosted in a state-of-the-art,
-              SSAE 16 certified data center, giving you peace of mind and
-              unparalleled flexibility.
+              ReactJS is a popular JavaScript library used for building reusable
+              UI components. It allows developers to create fast, scalable, and
+              maintainable web applications. With ReactJS, you can build complex
+              user interfaces by breaking them down into smaller, manageable
+              components.
             </p>
-            <Button on Click={() => navigate("/cloud")}>
-              How It Works
+            <Button>
+              <Link
+                to="/cloud"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                How It Works
+              </Link>
             </Button>
           </Col>
-          <Col md={6} >
-          {/* className="layout p-4 m-3" */}
+          <Col md={6}>
+            {/* className="layout p-4 m-3" */}
             <h3 className="my-2 ">
               Expert Support for Ambitious Organizations
             </h3>
             <p>
-              As seasoned IT professionals, we're uniquely equipped to augment
-              the capabilities of in-house IT teams at larger enterprises.
-              Whether you need specialized expertise or an extra layer of
-              support, we're here to help you overcome challenges and drive
-              business growth.
+              We amplify the capabilities of in-house IT teams at larger
+              enterprises. Whether you need specialized expertise, additional
+              resources, or strategic guidance, we're here to help you
             </p>
             <Button onClick={() => navigate("/contact")}>Get Your Team</Button>
           </Col>
