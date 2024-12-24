@@ -26,7 +26,7 @@ const Blog = () => {
       </Row>
       <Row className="d-flex align-items-center justify-content-center my-5">
         <Col md={6}><Image src={ITteam} fluid rounded/></Col>
-        <Col md={6}>
+        <Col md={6} className="mt-3">
         <h3>About Driftmark Technology</h3>
           <p>
              Driftmark Technology is a software
@@ -56,7 +56,7 @@ const Blog = () => {
         </Col>
         <Col md={6}><Image src={FrontPage} fluid rounded style={{height:'60%'}} /></Col>
       </Row>
-      <Row className="align-items-center justify-content-center my-5 py-3" style={{border:'2px solid #02025fe1',borderRadius:"10px"}} >
+      <Row className="align-items-center justify-content-center my-5 py-3 layout" style={{borderRadius:"10px"}} >
         <Col>
           <h3>Advantages of Partnering with Driftmark Technology</h3>
           <p>

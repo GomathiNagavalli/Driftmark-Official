@@ -1,29 +1,31 @@
 import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
-// import Enterpriseimg from "../assets/enterprise.png";
 import "../components/Solutions.css";
-// import ITsolution from "../assets/ITsolution.png";
-// import cloud2 from "../assets/cloud2.png";
 import { useNavigate } from "react-router-dom";
 import Enterpriseimg2 from "../assets/Enterpriseimg.jpg";
 
 const Enterprise = () => {
-  const navigate = useNavigate();
+   const navigate = useNavigate();
+  
+    const handleLinkClick = (path) => {
+      navigate(path);
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+    };
   return (
     <>
       <Container className="mt-3">
         <Row>
           <Col md={6}>
             {/* <span style={{ color: "skyblue" }}>ENTERPRISE SOLUTIONS</span> */}
-            <h2 className="mt-3"> Expert IT Support for</h2>
-            <h2>In-House Teams</h2>
+            <h1 className="mt-3">Enterprise Solutions</h1>
+            {/* <h1></h1> */}
             <p className="mt-3">
-              Not every organization needs a full-scale IT outsourcing solution,
-              but nor do they have all the expertise in-house. If your business
-              falls somewhere in between, our supplemental IT services are here
-              to help. We'll work alongside your internal IT team to fill gaps,
-              provide specialized expertise, and share the workload – so you can
-              focus on what matters most.
+              At Driftmark Technology, we understand the complexities of
+              enterprise environments and the need for scalable, secure, and
+              efficient solutions. Our team of experts works closely with
+              enterprises to design, develop, and implement customized solutions
+              that drive business growth, improve operational efficiency, and
+              enhance customer experiences.
             </p>
           </Col>
           <Col md={6}>
@@ -42,24 +44,19 @@ const Enterprise = () => {
         <Row>
           <Col>
             <div className="text-center ">
-              <h2 className="display-6 fw-bold">
-                {" "}
-                Augment Your IT Team with Expert Support
-              </h2>
+              <h2 className="display-6 fw-bold"> Digital Transformation</h2>
               <p>
-                Is your in-house IT team overwhelmed? We provide
-                enterprise-grade expertise to businesses with 100+ users,
-                helping to alleviate the daily burden on your IT staff. Our goal
-                is to boost your productivity and streamline workflow, so you
-                can focus on driving business growth
+                We help enterprises navigate the digital landscape by developing
+                strategies, designing solutions, and implementing technologies
+                that drive business innovation.
               </p>
             </div>
           </Col>
         </Row>
         <div
-          className="text-center my-3 w-70"
+          className="text-center my-3 w-70 layout"
           style={{
-            border: "3px solid #02025fe1",
+            // border: "3px solid #02025fe1",
             borderRadius: "10px",
             padding: "30px",
           }}
@@ -74,25 +71,19 @@ const Enterprise = () => {
           </p>
         </div>
       </Container>
-      <Container className="contact-container my-5">
-        <Row className="justify-content-center align-items-center">
-          <Col md={8}>
-            <div>
-              <h1 style={{ color: "white" }}>
-                Let's discuss how we can support{" "}
-              </h1>
-              <h1 style={{ color: "white" }}>your business goals.</h1>
-            </div>
-          </Col>
+      <Container className="contact-container animated-border my-4">
+        <Row>
           <Col>
-            <Button className="mt-3" href="/contact">
-              Contact Us Today
-            </Button>
+          <div><h1 style={{ color: "" }}>Lets Discuss.Get in Touch</h1>
+
+          <Button className="mt-3 orange-button" onClick={()=>handleLinkClick("/contact")}>
+            Contact Us Today
+          </Button>
+        </div>
           </Col>
         </Row>
-       
       </Container>
-      <Container>
+      <Container className="my-3">
         <Row>
           <Col md={4}>
             <h3>Flutter MobileApp Development</h3>

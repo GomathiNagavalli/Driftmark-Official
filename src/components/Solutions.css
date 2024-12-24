@@ -9,15 +9,15 @@ p{
 h3{
     color: #02025fe1; 
 } */
-.contact-container{
+/* .contact-container{
     background-color: rgba(2, 2, 95, 0.882); 
     border-radius: 10px;
     color:white;   
     text-align: center;
     padding:30px 0px;
-}
+} */
 .layout{
-    border: 3px solid #02025fe1;
+    border: 3px solid teal;
     border-radius: 10px;
 }
 .background-image {
@@ -28,4 +28,60 @@ h3{
     width: 89vw;
     border-radius: 10px;
   }
- 
+  .text-orange {
+    color: #FF8C00; /* Orange color */
+  }
+  
+  .border-orange {
+    border: 2px solid #FF8C00; /* Orange border */
+  }
+  
+  .border-orange:hover {
+    background-color: #FF8C00; /* Orange background on hover */
+    color: white; /* White text on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #1c1b1b;
+    position: relative;
+    border: 5px solid transparent;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .animated-border {
+    background-clip: padding-box;
+    animation: borderAnimation 3s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-image: linear-gradient(90deg, orange, white) 1;
+    }
+    50% {
+      border-image: linear-gradient(90deg, white, orange) 1;
+    }
+    100% {
+      border-image: linear-gradient(90deg, orange, white) 1;
+    }
+  }
+  
+  .orange-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .orange-button:hover {
+    background-color: #ff9500;
+    transform: scale(1.1);
+  }
+  

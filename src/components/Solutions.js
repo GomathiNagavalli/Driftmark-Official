@@ -3,12 +3,16 @@ import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import "../components/Solutions.css";
 import SolutionsPage from "./SolutionsPage";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Frontpage2 from "../assets/Frontpage2.jpg";
 
 const Solutions = () => {
   const navigate = useNavigate();
-  // const navigate2 = useNavigate();
+
+  const handleLinkClick = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
   return (
     <>
       <Container>
@@ -38,15 +42,20 @@ const Solutions = () => {
 
       {/* ///////////////////// */}
       <SolutionsPage />
-      <Container className="contact-container">
+      <Container className="text-center py-5">
         <div>
-          <h1 style={{ color: "white" }}>We're Dedicated to Your</h1>
-          <h1 style={{ color: "white" }}>Business Success</h1>
-          <Button className="mt-3" onClick={() => navigate("/contact")}>
+          <h1>We're Dedicated to Your</h1>
+          <h1>Business Success</h1>
+          <Button
+            className="mt-3 text-orange border-orange"
+            variant="outline"
+            onClick={() => handleLinkClick("/contact")}
+          >
             Contact Us Today
           </Button>
         </div>
       </Container>
+
       <Container className="mt-3">
         <Row>
           <Col md={6}>
@@ -59,7 +68,11 @@ const Solutions = () => {
               with confidence and focus on what matters most - running your
               business.
             </p>
-            <Button onClick={() => navigate("/contact")}>
+            <Button
+              onClick={() => handleLinkClick("/contact")}
+              className="mt-3 text-orange border-orange"
+              variant="outline"
+            >
               Get A Free Consulting
             </Button>
           </Col>
@@ -89,13 +102,12 @@ const Solutions = () => {
               user interfaces by breaking them down into smaller, manageable
               components.
             </p>
-            <Button>
-              <Link
-                to="/cloud"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                How It Works
-              </Link>
+            <Button
+              className="mt-3 text-orange border-orange"
+              variant="outline"
+              onClick={() => handleLinkClick("/innovation")}
+              style={{ textDecoration: "none", color: "orange" }}>
+              How It Works
             </Button>
           </Col>
           <Col md={6}>
@@ -108,7 +120,13 @@ const Solutions = () => {
               enterprises. Whether you need specialized expertise, additional
               resources, or strategic guidance, we're here to help you
             </p>
-            <Button onClick={() => navigate("/contact")}>Get Your Team</Button>
+            <Button
+              onClick={() => handleLinkClick("/contact")}
+              className="mt-3 text-orange border-orange"
+              variant="outline"
+            >
+              Get Your Team
+            </Button>
           </Col>
         </Row>
       </Container>

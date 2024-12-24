@@ -1,19 +1,23 @@
-.navigation-bar .nav-link {
-  color: rgba(88, 45, 207, 0.934);
-  /* padding: 0 8px; */
+.nav-links .nav-link {
+  color: #008080; /* Teal color */
+  padding: 5px 15px; /* Add padding for better pill shape */
+  border: none; /* Default border */
+  border-radius: 50px; /* Pill shape */
+  transition: all 0.3s ease; /* Smooth transition */
 }
-  
-  .navigation-bar .nav-link:hover {
-    color: rgb(38, 176, 231);
-    /* text-decoration: underline; */
-  }
-  
-  .nav-links .nav-link {
-    padding: 0 4px;
-  }
-  .active-link{
-    color: skyblue !important;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
+
+.nav-links .nav-link:focus,
+.nav-links .nav-link.active {
+  color: #004d4d; /* Dark teal color */
+  border: 2px solid #008080; /* Teal border when focused */
+  background-color: transparent; /* Ensure no background change */
+  outline: none; /* Remove default focus outline */
+}
+
+.nav-links .nav-link:hover {
+  color: #004d4d; /* Dark teal color on hover */
+}
+.text-teal {
+  color: #008080; /* Teal color */
+}
+

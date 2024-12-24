@@ -11,10 +11,10 @@ const SolutionsPage = () => {
   return (
     <>
       <Container className="my-5">
-        <h2 className="text-center display-6">
+        <h2 className="text-center">
           Tailored Solutions to Meet Your
         </h2>
-        <h2 className="text-center display-6"> Unique Requirements</h2>
+        <h2 className="text-center"> Unique Requirements</h2>
         <p className="text-center mb-5">
           Your success is our top priority. We start by understanding your
           unique needs, aspirations, and challenges. Together, we'll conduct a
@@ -34,14 +34,14 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h1 style={{ color: "white" }}>
+                  <h2 style={{ color: "white" }}>
                     Transform Your Online Presence
                      {/* with Custom Web Development
                     Solutions */}
-                  </h1>
+                  </h2>
                   <p style={{ color: "white" }}>
-                    Elevate your business with a stunning, user-friendly, and
-                    responsive website that drives engagement and conversions.
+                    Elevate your business with a stunning responsive website
+                    {/* responsive website that drives engagement and conversions. */}
                     {/* Our expert web developers craft tailored solutions using the
                     latest technologies to help you stand out in the digital
                     landscape. */}
@@ -55,15 +55,13 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h1 style={{ color: "white" }}>
-                    Create visually stunning mobile apps
-                    with our expert
-                  </h1>
+                  <h2 style={{ color: "white" }}>
+                     Visually stunning mobile apps
+                  </h2>
                   <p style={{ color: "white" }}>
                     {/* Flutter app development services.  */}
-                    Our team leverages the
-                    power of Flutter to deliver seamless, cross-platform
-                    experiences that delight users and drive business success.
+                    Cross-platform
+                    experiences that drive business success.
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
@@ -74,12 +72,11 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h1 style={{ color: "white" }}>
+                  <h2 style={{ color: "white" }}>
                     Protecting Your Network Around the Clock
-                  </h1>
+                  </h2>
                   <p style={{ color: "white" }}>
-                    Enjoy unparalleled peace of mind with our 24/7 security
-                    services, designed to safeguard your network from threats.
+                   Designed to safeguard your network from threats.
                     {/* Our team of New England-based experts is always on standby,
                     just a phone call away, to provide prompt support and ensure
                     your business stays secure. */}

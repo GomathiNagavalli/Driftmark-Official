@@ -13,8 +13,8 @@ const About = () => {
           <Col md={6}>
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
-              <h2>Scalable Solutions for</h2>
-              <h2>Ambitious Business</h2>
+              <h1>Scalable Solutions for</h1>
+              <h1>Ambitious Business</h1>
               <p>
                 At Driftmark Technology, we understand that innovative
                 businesses like yours can't afford to be held back by IT
@@ -36,9 +36,26 @@ const About = () => {
         </Row>
       </Container>
       <SolutionsPage />
+      <Container>
+        <Row>
+          <Col md={4}>
+          <h2>Cybersecurity</h2>
+          <p>Our cybersecurity experts help enterprises protect their sensitive data, prevent cyber threats, and ensure compliance with regulatory requirements.</p>
+          </Col>
+          <Col md={4}>
+          <h2>IT Consulting</h2>
+          <p>We provide expert guidance and support to help enterprises make informed technology decisions, optimize their IT infrastructure, and ensure seamless integration with existing systems.</p>
+          </Col>
+          <Col md={4}>
+          <h2>Custom Solutions</h2>
+          <p>Our team develops tailored software solutions that meet the unique needs of enterprises, improving operational efficiency, reducing costs, and enhancing customer experiences.</p>
+          </Col>
+        </Row>
+      </Container>
+
       <Container
         className="my-5"
-        style={{ backgroundColor: " rgb(182, 230, 230)", borderRadius: "10px" }}
+        style={{ backgroundColor: " rgb(246, 212, 140)", borderRadius: "10px" }}
       >
         <div className="text-center py-5 px-5">
           <h1 className="my-3">About Our Expert Team</h1>

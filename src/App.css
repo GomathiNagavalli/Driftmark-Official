@@ -2,15 +2,26 @@ body{
   margin: 5px 20px;
 }
 
-h1,h2{
-  color: rgba(5, 5, 124, 0.882); 
+h1{
+  /* color: rgba(5, 5, 124, 0.882);  */
+  color:#008080;
+  font-size: 40px;
+}
+h2{
+ color:rgb(226, 117, 15); 
+ font-size: 32px;
+}
+h3{
+  color:orange;
+  font-size: 28px;
 }
 p{
   
-  color: rgba(42, 42, 92, 0.919); 
+  /* color: rgba(42, 42, 92, 0.919);  */
+  color:gray;
   font-size: 18px;
 }
-h3{
+/* h3{
   color: #02025fe1; 
-}
+} */
 
