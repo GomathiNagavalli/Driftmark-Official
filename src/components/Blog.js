@@ -9,9 +9,9 @@ const Blog = () => {
   return (
     <>
       <Row>
-        <Col className="">
-          <h1 className="">Transforming Businesses through Innovative</h1>
-          <h1 className=""> Software Solutions</h1>
+        <Col >
+          <h1 >Transforming Businesses through Innovative</h1>
+          <h1> Software Solutions</h1>
           <h3>The Driftmark Technology Story</h3>
           <p className="mt-3">
             In today's fast-paced digital landscape, businesses need innovative

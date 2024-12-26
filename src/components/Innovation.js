@@ -76,10 +76,10 @@ const Innovation = () => {
       </Container>
       <Container className="contact-container animated-border p-3">
         <div>
-          <h2 style={{ color: "teal" }}>We always ready to</h2>
-          <h2 style={{ color: "teal" }}>help your business.</h2>
+          <h2 >Your partner in business</h2>
+          <h2 > success</h2>
           <Button className="mt-3 orange-button" onClick={()=>handleLinkClick("/contact")}>
-            Contact Us Today
+            Get in Touch
           </Button>
         </div>
       </Container>
