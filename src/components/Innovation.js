@@ -74,18 +74,18 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="contact-container animated-border p-3">
-        <div>
+      <Container >
+        <Row className="d-flex justify-content-center align-items-center">
+          <Col className="contact-container animated-border p-3" md={6}>
+          <div>
           <h2 >Your partner in business</h2>
           <h2 > success</h2>
           <Button className="mt-3 orange-button" onClick={()=>handleLinkClick("/contact")}>
             Get in Touch
           </Button>
         </div>
-      </Container>
-      <Container>
-        <Row>
-          <Col>
+          </Col>
+          <Col md={6}>
             <div className="text-center">
               <h3 className="my-3 ">The Right Team, Behind You</h3>
               <p>
@@ -97,7 +97,7 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-3">
+      <Container className="my-4">
         <Row>
           <Col>
             <div className="text-center">
