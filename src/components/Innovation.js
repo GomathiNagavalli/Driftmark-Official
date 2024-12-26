@@ -30,7 +30,7 @@ const Innovation = () => {
           </Col>
           <Col md={6}>
             <div className="text-center">
-              <Image src={cloudnew} fluid rounded  style={{ width: "500px", height: "300px" }}/>
+              <Image src={cloudnew} fluid rounded className="shadow" style={{ width: "500px", height: "300px" }}/>
             </div>
           </Col>
         </Row>

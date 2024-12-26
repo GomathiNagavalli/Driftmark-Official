@@ -29,6 +29,7 @@ const About = () => {
                 src={Aboutimg}
                 fluid
                 rounded
+                className="shadow"
                 style={{ width: "500px", height: "300px" }}
               ></Image>
             </div>

@@ -28,12 +28,13 @@ const Enterprise = () => {
               enhance customer experiences.
             </p>
           </Col>
-          <Col md={6}>
+          <Col md={6} >
             <div className="text-center">
               <Image
                 src={Enterpriseimg2}
                 fluid
                 rounded
+                className="shadow"
                 // style={{ width: "400px", height: "300px" }}
                 style={{ width: "500px", height: "300px" }}
               />

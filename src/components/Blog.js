@@ -25,7 +25,7 @@ const Blog = () => {
         </Col>
       </Row>
       <Row className="d-flex align-items-center justify-content-center my-5">
-        <Col md={6}><Image src={ITteam} fluid rounded/></Col>
+        <Col md={6}><Image src={ITteam} fluid rounded className="shadow"/></Col>
         <Col md={6} className="mt-3">
         <h3>Let's Shape the Future Together</h3>
           <p>
@@ -50,7 +50,7 @@ Discover how Driftmark Technology can empower your business to achieve new heigh
             <li>Deployment and maintenance</li>
           </ol>
         </Col>
-        <Col md={6}><Image src={FrontPage} fluid rounded style={{height:'60%'}} /></Col>
+        <Col md={6}><Image src={FrontPage} fluid rounded className="shadow" style={{height:'60%'}} /></Col>
       </Row>
       <Row className="align-items-center justify-content-center my-5 py-3 layout" style={{borderRadius:"10px"}} >
         <Col>
