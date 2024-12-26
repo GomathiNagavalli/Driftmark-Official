@@ -35,7 +35,22 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <SolutionsPage />
+      {/* <SolutionsPage /> */}
+      <Container
+        className="my-5"
+        style={{ backgroundColor: " rgb(246, 212, 140)", borderRadius: "10px" }}
+      >
+        <div className="text-center py-5 px-5">
+          <h1 className="my-3">About Our Expert Team</h1>
+          <p className="my-3">
+            Whether you're looking to enhance your online presence, streamline
+            operations, or develop a custom mobile app, we've got you covered.
+            Our mission is to keep your business moving forward, no matter what
+            IT challenges come your way. Partner with us to unlock scalable
+            solutions that propel your business forward.
+          </p>
+        </div>
+      </Container>
       <Container>
         <Row>
           <Col md={4}>
@@ -53,22 +68,8 @@ const About = () => {
         </Row>
       </Container>
 
-      <Container
-        className="my-5"
-        style={{ backgroundColor: " rgb(246, 212, 140)", borderRadius: "10px" }}
-      >
-        <div className="text-center py-5 px-5">
-          <h1 className="my-3">About Our Expert Team</h1>
-          <p className="my-3">
-            Whether you're looking to enhance your online presence, streamline
-            operations, or develop a custom mobile app, we've got you covered.
-            Our mission is to keep your business moving forward, no matter what
-            IT challenges come your way. Partner with us to unlock scalable
-            solutions that propel your business forward.
-          </p>
-        </div>
-      </Container>
-      <Container className="my-5">
+      
+      {/* <Container className="my-5">
         <Row>
           <Col>
             <div className="text-center">
@@ -85,7 +86,7 @@ const About = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </>
   );
 };

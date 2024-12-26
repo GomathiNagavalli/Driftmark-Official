@@ -17,7 +17,7 @@ const Enterprise = () => {
         <Row>
           <Col md={6}>
             {/* <span style={{ color: "skyblue" }}>ENTERPRISE SOLUTIONS</span> */}
-            <h1 className="mt-3">Enterprise Solutions</h1>
+            <h1 className="mt-3">Commercial Solutions</h1>
             {/* <h1></h1> */}
             <p className="mt-3">
               At Driftmark Technology, we understand the complexities of
@@ -44,7 +44,7 @@ const Enterprise = () => {
         <Row>
           <Col>
             <div className="text-center ">
-              <h2 className="display-6 fw-bold"> Digital Transformation</h2>
+              <h2 > Digital Transformation</h2>
               <p>
                 We help enterprises navigate the digital landscape by developing
                 strategies, designing solutions, and implementing technologies
@@ -54,7 +54,7 @@ const Enterprise = () => {
           </Col>
         </Row>
         <div
-          className="text-center my-3 w-70 layout"
+          className="text-center my-4 w-70 layout"
           style={{
             // border: "3px solid #02025fe1",
             borderRadius: "10px",
@@ -63,7 +63,7 @@ const Enterprise = () => {
         >
           <h2>Aligning IT with Your Business Vision</h2>
           {/* <h2> Business</h2> */}
-          <p className="mt-3 lead">
+          <p className="mt-3 ">
             Let's collaborate to develop a strategic IT roadmap tailored to your
             organization's unique goals. Our technical experts will help you
             bridge the gap between IT and business objectives, ensuring your
@@ -71,18 +71,7 @@ const Enterprise = () => {
           </p>
         </div>
       </Container>
-      <Container className="contact-container animated-border my-4">
-        <Row>
-          <Col>
-          <div><h1 style={{ color: "" }}>Lets Discuss.Get in Touch</h1>
-
-          <Button className="mt-3 orange-button" onClick={()=>handleLinkClick("/contact")}>
-            Contact Us Today
-          </Button>
-        </div>
-          </Col>
-        </Row>
-      </Container>
+      
       <Container className="my-3">
         <Row>
           <Col md={4}>

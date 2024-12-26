@@ -48,11 +48,10 @@ const Innovation = () => {
         </Row>
         <Row className="my-4">
           <Col md={4}>
-            <h3>Custom Software Development</h3>
+            <h3>Mobile Applications</h3>
             <p>
               We provide Custom Software Development. We create tailored
-              software solutions that meet the unique needs of our clients.
-              Mobile App Development: We design and develop mobile apps that are
+              software solutions that meet the unique needs of our clients.  We design and develop mobile apps that are
               intuitive, engaging, and scalable.
             </p>
           </Col>
@@ -65,7 +64,7 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
-            <h3>Innovation</h3>
+            <h3>Revolution</h3>
             <p>
               At Driftmark Technology, our mission is to empower businesses to
               succeed in the digital age. We strive to deliver exceptional
@@ -102,10 +101,10 @@ const Innovation = () => {
         <Row>
           <Col>
             <div className="text-center">
-              <h1 className="display-6 ">
+              <h1>
                 Driftmark Brings Your Vision to Life!
               </h1>
-              <p className="lead">
+              <p>
                 Our team of experts specializes in delivering cutting-edge
                 solutions in frontend development, full-stack development, and
                 Flutter mobile app development. Leveraging the power of ReactJS

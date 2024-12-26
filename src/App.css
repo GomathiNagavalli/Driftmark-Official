@@ -7,13 +7,9 @@ h1{
   color:#008080;
   font-size: 40px;
 }
-h2{
- color:rgb(226, 117, 15); 
- font-size: 32px;
-}
-h3{
-  color:orange;
-  font-size: 28px;
+h2,h3{
+ color:rgb(245, 167, 21); 
+ font-size: 28px;
 }
 p{
   

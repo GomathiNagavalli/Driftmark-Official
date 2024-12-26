@@ -21,7 +21,7 @@ const Solutions = () => {
         </h1>
         <Row className="my-4 ">
           <Col md={6}>
-            <h2 className="text-muted">
+            <h2>
               Expert Software Development & Consulting Services
             </h2>
 
@@ -59,7 +59,7 @@ const Solutions = () => {
       <Container className="mt-3">
         <Row>
           <Col md={6}>
-            <h3 className="mb-3">Transparent Pricing for Peace of Mind</h3>
+            <h3 className="mb-3">Transparent Fees for Total Clarity</h3>
             <p>
               When unexpected IT issues arise, the last thing you need is a
               surprise bill. That's why we offer a simple, all-inclusive monthly
@@ -68,13 +68,6 @@ const Solutions = () => {
               with confidence and focus on what matters most - running your
               business.
             </p>
-            <Button
-              onClick={() => handleLinkClick("/contact")}
-              className="mt-3 text-orange border-orange"
-              variant="outline"
-            >
-              Get A Free Consulting
-            </Button>
           </Col>
           <Col md={6}>
             <h3 className="mb-3 ">The Driftmark Difference</h3>
@@ -120,13 +113,6 @@ const Solutions = () => {
               enterprises. Whether you need specialized expertise, additional
               resources, or strategic guidance, we're here to help you
             </p>
-            <Button
-              onClick={() => handleLinkClick("/contact")}
-              className="mt-3 text-orange border-orange"
-              variant="outline"
-            >
-              Get Your Team
-            </Button>
           </Col>
         </Row>
       </Container>

@@ -1,23 +1,57 @@
-.nav-links .nav-link {
-  color: #008080; /* Teal color */
-  padding: 5px 15px; /* Add padding for better pill shape */
-  border: none; /* Default border */
-  border-radius: 50px; /* Pill shape */
-  transition: all 0.3s ease; /* Smooth transition */
+/* .nav-links .nav-link {
+  color: #008080; 
+  padding: 5px 15px; 
+  border: none; 
+  border-radius: 50px;
+  transition: all 0.3s ease; 
 }
 
 .nav-links .nav-link:focus,
 .nav-links .nav-link.active {
-  color: #004d4d; /* Dark teal color */
-  border: 2px solid #008080; /* Teal border when focused */
-  background-color: transparent; /* Ensure no background change */
-  outline: none; /* Remove default focus outline */
+  color: #004d4d; 
+  border: 2px solid #008080; 
+  background-color: transparent; 
+  outline: none; 
 }
 
 .nav-links .nav-link:hover {
-  color: #004d4d; /* Dark teal color on hover */
+  color: orange; 
 }
 .text-teal {
-  color: #008080; /* Teal color */
+  color: #008080; 
+} */
+ /* .......... */
+/* .active-link {
+  font-weight: bold;
+  color: #007bff !important; 
+  border-bottom: 2px solid #007bff;
+  
+} */
+ /* Default link styling */
+.nav-item {
+  color: teal;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border 0.3s ease, color 0.3s ease;
 }
+
+/* Link styling on hover or focus */
+.nav-item:hover,
+.nav-item:focus {
+  color: #ff7700; /* Optional hover color for text */
+  text-decoration: none;
+}
+
+/* Active link styling with orange border */
+.active-link {
+  border-bottom: 3px solid #ff7700; /* Highlighted border */
+  color: teal !important;
+}
+
+/* Optional transition for smooth effect */
+.nav-item,
+.active-link {
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 

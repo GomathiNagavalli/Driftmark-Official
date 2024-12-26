@@ -12,7 +12,7 @@ const Blog = () => {
         <Col className="">
           <h1 className="">Transforming Businesses through Innovative</h1>
           <h1 className=""> Software Solutions</h1>
-          <h3 className="display-6">The Driftmark Technology Story</h3>
+          <h3>The Driftmark Technology Story</h3>
           <p className="mt-3">
             In today's fast-paced digital landscape, businesses need innovative
             software solutions to stay ahead of the competition. Driftmark
@@ -27,15 +27,11 @@ const Blog = () => {
       <Row className="d-flex align-items-center justify-content-center my-5">
         <Col md={6}><Image src={ITteam} fluid rounded/></Col>
         <Col md={6} className="mt-3">
-        <h3>About Driftmark Technology</h3>
+        <h3>Let's Shape the Future Together</h3>
           <p>
-             Driftmark Technology is a software
-            development company that specializes in delivering customized
-            software solutions to businesses across various industries. With a
-            team of experienced developers, designers, and project managers,
-            Driftmark Technology has completed 3-4 successful projects,
-            demonstrating its capability to deliver high-quality solutions on
-            time.
+          
+
+Discover how Driftmark Technology can empower your business to achieve new heights. Contact us today to explore our services and solutions.
           </p>
         </Col>
       </Row>
