@@ -35,7 +35,7 @@ const Solutions = () => {
             </p>
           </Col>
           <Col md={6}>
-            <Image src={Frontpage2} rounded fluid className="shadow" />
+            <Image src={Frontpage2} rounded fluid className="shadow" style={{ width: "500px", height: "300px" }} />
           </Col>
         </Row>
       </Container>

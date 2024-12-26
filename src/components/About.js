@@ -29,7 +29,7 @@ const About = () => {
                 src={Aboutimg}
                 fluid
                 rounded
-                style={{ width: "500px", height: "250px" }}
+                style={{ width: "500px", height: "300px" }}
               ></Image>
             </div>
           </Col>

@@ -34,17 +34,18 @@ const Enterprise = () => {
                 src={Enterpriseimg2}
                 fluid
                 rounded
-                style={{ width: "400px", height: "300px" }}
+                // style={{ width: "400px", height: "300px" }}
+                style={{ width: "500px", height: "300px" }}
               />
             </div>
           </Col>
         </Row>
       </Container>
-      <Container className="mt-3">
+      <Container className="mt-4">
         <Row>
           <Col>
             <div className="text-center ">
-              <h2 > Digital Transformation</h2>
+              <h2 className="my-2"> Digital Transformation</h2>
               <p>
                 We help enterprises navigate the digital landscape by developing
                 strategies, designing solutions, and implementing technologies
