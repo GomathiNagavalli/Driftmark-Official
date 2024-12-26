@@ -21,11 +21,11 @@ const Solutions = () => {
         </h1>
         <Row className="my-4 ">
           <Col md={6}>
-            <h2>
+            <h2 className="mt-3">
               Expert Software Development & Consulting Services
             </h2>
 
-            <p className="">
+            <p className="mt-3">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program
               designs and to buy, sell or otherwise deal in such hardware and

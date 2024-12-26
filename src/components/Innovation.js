@@ -17,9 +17,9 @@ const Innovation = () => {
         <Row>
           <Col md={6}>
             <div>
-              <h1>Our Mission</h1>
+              <h1 className="mt-3">Our Mission</h1>
 
-              <p>
+              <p className="mt-3">
                 Driftmark Technology is a cutting-edge software development
                 company that specializes in creating innovative solutions for
                 businesses. Our team of expert developers, designers, and

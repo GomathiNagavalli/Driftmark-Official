@@ -13,9 +13,9 @@ const About = () => {
           <Col md={6}>
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
-              <h1>Scalable Solutions for</h1>
+              <h1 className="mt-3">Scalable Solutions for</h1>
               <h1>Ambitious Business</h1>
-              <p>
+              <p className="mt-3"> 
                 At Driftmark Technology, we understand that innovative
                 businesses like yours can't afford to be held back by IT
                 obstacles. That's why we're dedicated to providing top-notch
