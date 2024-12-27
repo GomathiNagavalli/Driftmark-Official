@@ -6,12 +6,19 @@ import ITteam from '../assets/ITteam.jpg';
 import FrontPage from '../assets/FrontPage.jpg';
 
 const Blog = () => {
+  const fadeIn = {
+    animation: "fadeIn 1s ease-in",
+  };
+
+  const zoomIn = {
+    animation: "zoomIn 1s ease-in",
+  };
   return (
     <>
       <Row>
         <Col >
-          <h1 >Transforming Businesses through Innovative</h1>
-          <h1> Software Solutions</h1>
+          <h1 style={fadeIn} >Transforming Businesses through Innovative</h1>
+          <h1 style={fadeIn}> Software Solutions</h1>
           <h3>The Driftmark Technology Story</h3>
           <p className="mt-3">
             In today's fast-paced digital landscape, businesses need innovative
@@ -24,8 +31,20 @@ const Blog = () => {
           </p>
         </Col>
       </Row>
-      <Row className="d-flex align-items-center justify-content-center my-5">
-        <Col md={6}><Image src={ITteam} fluid rounded className="shadow"/></Col>
+      <Row className="d-flex align-items-center justify-content-center my-5  bg-light shadow">
+        <Col md={6}><Image src={ITteam}  fluid rounded className="shadow"
+        style={{
+          width: "100%",
+          maxWidth: "500px",
+          height: "auto",
+          borderRadius: "10px",
+          boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+          ...zoomIn,
+          transition: "transform 0.2s ease-in-out",
+        }}
+        onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+        onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+        /></Col>
         <Col md={6} className="mt-3">
         <h3>Let's Shape the Future Together</h3>
           <p>
@@ -50,14 +69,24 @@ Discover how Driftmark Technology can empower your business to achieve new heigh
             <li>Deployment and maintenance</li>
           </ol>
         </Col>
-        <Col md={6}><Image src={FrontPage} fluid rounded className="shadow" style={{height:'60%'}} /></Col>
+        <Col md={6}><Image src={FrontPage} fluid rounded className="shadow" style={{
+                  width: "100%",
+                  maxWidth: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}/></Col>
       </Row>
-      <Row className="align-items-center justify-content-center my-5 py-3 layout" style={{borderRadius:"10px"}} >
-        <Col>
-          <h3>Advantages of Partnering with Driftmark Technology</h3>
-          <p>
+      <Row className="align-items-center shadow justify-content-center my-5 py-3 layout" style={{borderRadius:"10px"}} >
+        <Col md={6}>
+          <h3 className="text-center ">Advantages of Partnering with Driftmark Technology</h3>
+          <p  className="text-center ">
             By partnering with Driftmark Technology, businesses can benefit
-            from:
+            from
           </p>
         </Col>
         <Col md={6}>

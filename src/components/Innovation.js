@@ -27,16 +27,16 @@ const Innovation = () => {
 
   return (
     <>
-      <Container className="mt-4">
+      <Container className="py-5">
         <Row>
           <Col md={6}>
             <div>
-              <h1 className="mt-3" style={fadeIn}>
+              <h2 className="my-3" style={fadeIn}>
                 Our Mission
-              </h1>
+              </h2>
               <p
-                className="mt-3"
-                style={{ fontSize: "1.1rem", lineHeight: "1.6" }}
+                className="my-4"
+                
               >
                 Driftmark Technology is a cutting-edge software development
                 company that specializes in creating innovative solutions for
@@ -69,24 +69,14 @@ const Innovation = () => {
         </Row>
       </Container>
       <Container className="my-5">
-        <Row
-          className="mb-3 justify-content-center align-items-center"
-          style={{
-            backgroundImage: `url('../assets/CloudBgimg.jpg')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            height: "40vh",
-            borderRadius: "10px",
-            color: "white",
-          }}
-        >
-          <Col lg={10}>
-            <div className="text-center">
-              <h1>Why Choose Driftmark Technology?</h1>
+        <Row>
+          <Col  className="text-center">
+            <div className="">
+              <h1 className="">Why Choose Driftmark Technology?</h1>
             </div>
           </Col>
         </Row>
-        <Row className="my-4">
+        <Row className="my-2">
           <Col md={4}>
             <h3 style={{ color: "#FF8C00" }}>Mobile Applications</h3>
             <p>
@@ -115,7 +105,7 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="bg-light">
+      <Container className="bg-light shadow">
         <Row className="d-flex justify-content-center align-items-center py-5 px-2">
           <Col
             md={6}
@@ -153,7 +143,7 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-4">
+      <Container className="my-5">
         <Row>
           <Col>
             <div className="text-center">

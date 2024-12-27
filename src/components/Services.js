@@ -3,7 +3,7 @@ import Blog from "./Blog";
 // import { CaseStudies } from './CaseStudies';
 import Downloads from "./Downloads";
 // import CaseStudies from './CaseStudies';
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 import { Container } from "react-bootstrap";
 import "./Solutions.css";
 
@@ -14,39 +14,23 @@ function Services() {
   const components = {
     blog: Blog,
     downloads: Downloads,
-    ContactNow: Contact,
+    // ContactNow: Contact,
   };
 
   // Get the current component to render
   const ActiveComponent = components[activeLink];
 
   return (
-    <Container className="mt-3">
-      {/* Navigation Links */}
-      {/* <nav>
-        <ul className='list-unstyled d-flex gap-2'>
-          {Object.keys(components).map((link) => (
-            <li key={link} className=''>
-              <button onClick={() => setActiveLink(link)} className='btn btn-primary'>
-                {link.charAt(0).toUpperCase() + link.slice(1)}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav> */}
-      <nav>
+    <Container  className="py-5">
+      
+      <nav className="mt-3">
         <ul className="list-unstyled d-flex gap-2">
           {Object.keys(components).map((link) => (
             <li key={link} className="">
               <button
                 onClick={() => setActiveLink(link)}
-                style={{
-                  border: "1px solid orange",
-                  color: "orange",
-                  backgroundColor: "transparent",
-                  padding: "5px 10px",
-                  borderRadius: "5px",
-                }}
+    
+                className="btn btn-lg btn-primary"
               >
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </button>

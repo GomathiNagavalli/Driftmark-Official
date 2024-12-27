@@ -6,10 +6,17 @@ h1{
   /* color: rgba(5, 5, 124, 0.882);  */
   color:#008080;
   font-size: 40px;
+  font-weight: bold;
 }
-h2,h3{
+h2{
+  font-size: 32px;
+  color: teal;
+  font-weight: bold;
+}
+h3{
  color:rgb(245, 167, 21); 
  font-size: 28px;
+ font-weight: bold;
 }
 p{
   

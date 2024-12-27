@@ -10,7 +10,7 @@ import coursalNew from "../assets/courosalNew.jpg";
 const SolutionsPage = () => {
   return (
     <>
-      <Container className="my-5 py-5 bg-light">
+      <Container className="my-5 py-5 shadow bg-light">
         <div className="text-center my-3">
         <h2 className="fw-bold">
           Tailored Solutions to Meet Your

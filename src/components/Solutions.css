@@ -28,23 +28,7 @@
 }
 
 /* Text and Button Styling */
-.text-orange {
-  color: #FF8C00; /* Orange color */
-  font-weight: bold;
-}
 
-.border-orange {
-  border: 2px solid #FF8C00; /* Orange border */
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.border-orange:hover {
-  background-color: #FF8C00; /* Orange background on hover */
-  color: white; /* White text on hover */
-  transform: scale(1.05);
-}
 
 .contact-container {
   display: flex;

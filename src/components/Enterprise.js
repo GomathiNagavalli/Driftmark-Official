@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import "../components/Solutions.css";
@@ -6,21 +5,31 @@ import { useNavigate } from "react-router-dom";
 import Enterpriseimg2 from "../assets/Enterpriseimg.jpg";
 
 const Enterprise = () => {
-   const navigate = useNavigate();
-  
-    const handleLinkClick = (path) => {
-      navigate(path);
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
-    };
+  const navigate = useNavigate();
+
+  const handleLinkClick = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
+
+  const fadeIn = {
+    animation: "fadeIn 1s ease-in",
+  };
+
+  const zoomIn = {
+    animation: "zoomIn 1s ease-in",
+  };
+
   return (
     <>
-      <Container className="mt-3">
+      <Container className="py-5">
         <Row>
           <Col md={6}>
-            
-            <h1 className="mt-3">Commercial Solutions</h1>
-            
-            <p className="mt-3">
+            <h2 className="mt-3" style={fadeIn}>
+              Commercial Solutions
+            </h2>
+
+            <p className="my-4">
               At Driftmark Technology, we understand the complexities of
               enterprise environments and the need for scalable, secure, and
               efficient solutions. Our team of experts works closely with
@@ -29,22 +38,33 @@ const Enterprise = () => {
               enhance customer experiences.
             </p>
           </Col>
-          <Col md={6} >
+          <Col md={6}>
             <div className="text-center">
               <Image
                 src={Enterpriseimg2}
                 fluid
                 rounded
-                className="shadow"
-                
-                style={{ width: "500px", height: "300px" }}
+                // className="shadow"
+
+                // style={{ width: "500px", height: "300px" }}
+                style={{
+                  width: "100%",
+                  maxWidth: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
               />
             </div>
           </Col>
         </Row>
       </Container>
-      <Container className="mt-4">
-        <Row>
+      <Container className="mt-4 shadow bg-light py-5 px-2">
+        <Row className=" ">
           <Col>
             <div className="text-center ">
               <h2 className="my-2"> Digital Transformation</h2>
@@ -64,7 +84,7 @@ const Enterprise = () => {
           }}
         >
           <h2>Aligning IT with Your Business Vision</h2>
-          
+
           <p className="mt-3 ">
             Let's collaborate to develop a strategic IT roadmap tailored to your
             organization's unique goals. Our technical experts will help you
@@ -73,8 +93,8 @@ const Enterprise = () => {
           </p>
         </div>
       </Container>
-      
-      <Container className="my-3">
+
+      <Container className="my-5">
         <Row>
           <Col md={4}>
             <h3>Flutter MobileApp Development</h3>
@@ -85,7 +105,7 @@ const Enterprise = () => {
             </p>
           </Col>
           <Col md={4}>
-            <h3>Our Expertise in Frontend Development</h3>
+            <h3>Technologies In Fingertip</h3>
             <p>
               {" "}
               Frontend frameworks like React, Angular, and Vue.js enable

@@ -8,7 +8,7 @@ const Downloads = () => {
   return (
     <>
       <Row className="">
-        <Col md={6} className="my-3">
+        <Col md={6} className="my-3 shadow py-5 ">
           <Image src={Refix} style={{width:'100px', height:'100px'}}/>
           <h3>Refix Systems</h3>
           <p style={{fontSize:'14px'}}>
@@ -17,9 +17,9 @@ const Downloads = () => {
             your laptop fixed without leaving the comfort of your home? Our
             at-home laptop repair service is here to help!
           </p>
-          <Button onClick={() => window.open('https://refixsystems.com/','_blank')} >Download Now</Button>
+          <Button onClick={() => window.open('https://refixsystems.com/','_blank')} className="btn btn-lg btn-primary">Download Now</Button>
         </Col>
-        <Col md={6} className="my-3">
+        <Col md={6} className="my-3 shadow py-5">
           <Image src={Train}  style={{width:'100px', height:'100px'}}/>
           <h3>Trains On Wheels</h3>
           <p style={{fontSize:'14px'}}>
@@ -28,7 +28,7 @@ const Downloads = () => {
             application was created by Driftmark. a team of driftmark technology
             corporation developers
           </p>
-          <Button onClick={() => window.open('https://play.google.com/store', '_blank')}>
+          <Button onClick={() => window.open('https://play.google.com/store', '_blank')} className="btn btn-lg btn-primary">
   Download Now
 </Button>
         </Col>
