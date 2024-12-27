@@ -1,21 +1,168 @@
-/* h1,h2{
-    color: rgba(5, 5, 124, 0.882); 
+/* General Layout Styling */
+.layout {
+  border: 3px solid teal;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-p{
-    
-    color: rgba(53, 53, 148, 0.882); 
-    font-size: 18px;
+
+/* .layout:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+} */
+
+/* Background Image Styling */
+.background-image {
+  background-image: url('../assets/CloudBgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
-h3{
-    color: #02025fe1; 
-} */
-/* .contact-container{
-    background-color: rgba(2, 2, 95, 0.882); 
-    border-radius: 10px;
-    color:white;   
-    text-align: center;
-    padding:30px 0px;
-} */
+
+/* Text and Button Styling */
+.text-orange {
+  color: #FF8C00; /* Orange color */
+  font-weight: bold;
+}
+
+.border-orange {
+  border: 2px solid #FF8C00; /* Orange border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.border-orange:hover {
+  background-color: #FF8C00; /* Orange background on hover */
+  color: white; /* White text on hover */
+  transform: scale(1.05);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #1c1b1b;
+  position: relative;
+  border: 5px solid transparent;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animated-border {
+  background-clip: padding-box;
+  animation: borderAnimation 3s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+      border-image: linear-gradient(90deg, orange, white) 1;
+  }
+  50% {
+      border-image: linear-gradient(90deg, white, orange) 1;
+  }
+  100% {
+      border-image: linear-gradient(90deg, orange, white) 1;
+  }
+}
+
+.orange-button {
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.orange-button:hover {
+  background-color: #ff9500;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.image-responsive {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-responsive:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-in;
+}
+
+.animate-zoom-in {
+  animation: zoomIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .layout{
     border: 3px solid teal;
     border-radius: 10px;
@@ -29,17 +176,17 @@ h3{
     border-radius: 10px;
   }
   .text-orange {
-    color: #FF8C00; /* Orange color */
+    color: #FF8C00; 
   }
   
   .border-orange {
-    border: 2px solid #FF8C00; /* Orange border */
+    border: 2px solid #FF8C00; 
   }
   
   .border-orange:hover {
-    background-color: #FF8C00; /* Orange background on hover */
-    color: white; /* White text on hover */
-    transition: all 0.3s ease; /* Smooth transition */
+    background-color: #FF8C00; 
+    color: white; 
+    transition: all 0.3s ease; 
   }
   .contact-container {
     display: flex;
@@ -84,4 +231,4 @@ h3{
     background-color: #ff9500;
     transform: scale(1.1);
   }
-  
+   */

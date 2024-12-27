@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import '../components/Footer.css';
-import Logo from '../assets/Driftmarklogo.jpg';
-import {Image} from "react-bootstrap";
+import "../components/Footer.css";
+import Logo from "../assets/Driftmarklogo.jpg";
+import { Image } from "react-bootstrap";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -17,24 +17,28 @@ const Footer = () => {
     <>
       <Container
         fluid
-        className="my-1 shadow"
+        className="shadow"
         style={{
           backgroundColor: "black",
           color: "white",
-          borderRadius: "10px",
+          // borderRadius: "10px",
         }}
       >
-        <Row style={{backgroundColor:'white'}}>
-        
+        <Row style={{ backgroundColor: "white" }}>
           <Col>
             <div className="text-center my-3 d-flex align-items-center justify-content-center">
-             <Image src={Logo} fluid style={{width:'80px',height:'80px',borderRadius:'50%'}}/>
-              <h1 style={{color:'teal'}}>Let Us Bring Your Product to life</h1>
+              <Image
+                src={Logo}
+                fluid
+                style={{ width: "80px", height: "80px", borderRadius: "50%" }}
+              />
+              <h1 style={{ color: "teal" }}>
+                Let Us Bring Your Product to life
+              </h1>
             </div>
           </Col>
         </Row>
         <Row className="my-4 d-flex justify-content-center ">
-        
           <Col md={3} className="my-2">
             <div className="d-flex flex-column">
               <h4>Services</h4>
@@ -98,24 +102,33 @@ const Footer = () => {
                   to="https://www.linkedin.com/company/driftmark-technology/?originalSubdomain=in"
                   target="_blank"
                 >
-                 <i className="bi bi-linkedin" style={{ color: "#0077b5" }}></i>
+                  <i
+                    className="bi bi-linkedin"
+                    style={{ color: "#0077b5" }}
+                  ></i>
                 </Link>
                 <Link
                   to="https://x.com/DriftmarkTech/status/1868882210511896780"
                   target="_blank"
                 >
-                   <i className="bi bi-twitter" style={{ color: "#1DA1F2" }}></i>
+                  <i className="bi bi-twitter" style={{ color: "#1DA1F2" }}></i>
                 </Link>
-               
+
                 <Link
                   to="https://www.instagram.com/driftmarktechnology/"
                   target="_blank"
                   className=""
                 >
-                 <i className="bi bi-instagram" style={{ color: "#E1306C" }}></i>
+                  <i
+                    className="bi bi-instagram"
+                    style={{ color: "#E1306C" }}
+                  ></i>
                 </Link>
                 <Link to="mailto:driftmarktechnology@gmail.com">
-                <i className="bi bi-envelope" style={{ color: "#EA4335" }}></i>
+                  <i
+                    className="bi bi-envelope"
+                    style={{ color: "#EA4335" }}
+                  ></i>
                 </Link>
               </div>
             </div>
@@ -134,8 +147,6 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
 
 // import React, { useState } from "react";
 // import { Container, Row, Col } from "react-bootstrap";
@@ -261,10 +272,6 @@ export default Footer;
 
 // export default Footer;
 
-
-
-
-
 // import React, { useState } from "react";
 // import { Container, Row, Col } from "react-bootstrap";
 // import { Link } from "react-router-dom";
@@ -323,7 +330,7 @@ export default Footer;
 //                 <h4 className="text-light">Follow Us</h4>
 //                 <div
 //                   className="d-flex justify-content-between my-2"
-//                   style={{ width: "100px" }} 
+//                   style={{ width: "100px" }}
 //                 >
 //                   <Link
 //                     to="https://www.linkedin.com/company/driftmark-technology/?originalSubdomain=in"

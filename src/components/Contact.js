@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ContactForm from "./ContactForm";
-// import { Link } from "react-router-dom";
+
 
 const Contact = () => {
   return (

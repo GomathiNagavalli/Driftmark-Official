@@ -10,12 +10,15 @@ import coursalNew from "../assets/courosalNew.jpg";
 const SolutionsPage = () => {
   return (
     <>
-      <Container className="my-5">
-        <h2 className="text-center">
+      <Container className="my-5 py-5 bg-light">
+        <div className="text-center my-3">
+        <h2 className="fw-bold">
           Tailored Solutions to Meet Your
         </h2>
-        <h2 className="text-center"> Unique Requirements</h2>
-        <p className="text-center mb-5">
+        <h2 className="fw-bold"> Unique Requirements</h2>
+        </div>
+        
+        <p className="text-center my-4">
           Your success is our top priority. We start by understanding your
           unique needs, aspirations, and challenges. Together, we'll conduct a
           thorough assessment of your current situation to craft a personalized

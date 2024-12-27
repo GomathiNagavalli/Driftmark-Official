@@ -68,26 +68,6 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-
-      
-      {/* <Container className="my-5">
-        <Row>
-          <Col>
-            <div className="text-center">
-              <h1 className="display-6 ">
-                Driftmark Brings Your Vision to Life!
-              </h1>
-              <p className="lead">
-                Our team of experts specializes in delivering cutting-edge
-                solutions in frontend development, full-stack development, and
-                Flutter mobile app development. Leveraging the power of ReactJS
-                and Flutter, we've successfully completed 3+ projects that
-                empower businesses to reach new heights.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container> */}
     </>
   );
 };
