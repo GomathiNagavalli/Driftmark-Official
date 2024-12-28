@@ -84,7 +84,7 @@ const Solutions = () => {
       </Container>
 
       <Container>
-        <Row className="my-5 py-4  bg-light shadow rounded animate-slide-up">
+        <Row className="my-3 bg-light py-4 px-1 shadow rounded animate-slide-up">
           <Col md={6} className="mb-4">
             <h3 className="fw-bold">
               Building Dynamic Web Applications 

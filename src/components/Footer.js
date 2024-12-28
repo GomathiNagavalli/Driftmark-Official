@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../components/Footer.css";
-import Logo from "../assets/Driftmarklogo.jpg";
-import { Image } from "react-bootstrap";
+// import Logo from "../assets/Driftmarklogo.jpg";
+// import { Image } from "react-bootstrap";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -27,11 +27,11 @@ const Footer = () => {
         <Row style={{ backgroundColor: "white" }}>
           <Col>
             <div className="text-center my-3 d-flex align-items-center justify-content-center">
-              <Image
+              {/* <Image
                 src={Logo}
                 fluid
                 style={{ width: "80px", height: "80px", borderRadius: "50%" }}
-              />
+              /> */}
               <h1 style={{ color: "teal" }}>
                 Let Us Bring Your Product to life
               </h1>
@@ -39,6 +39,41 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className="my-4 d-flex justify-content-center ">
+          <Col md={3} className="my-2">
+            <div className="d-flex flex-column">
+              <h4><i className="bi bi-twitter"></i></h4>
+              {/* <span
+                onClick={() => handleLinkClick("/")}
+                className="my-2 text-light "
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                <i className="bi bi-telephone"></i> +91 6381475573
+              </span> */}
+              <span
+                onClick={() => window.open(`tel:+916381475573`)}
+                className="my-2 text-light"
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                <i className="i bi bi-telephone"></i> +91 6381475573
+              </span>
+              <span
+                onClick={() => window.open('https://www.google.com/search?q=driftmark+technology&oq=&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQwxMTgzMTcwNmowajeoAgiwAgE&sourceid=chrome&ie=UTF-8')
+                
+                }
+                  className="my-2 text-light"
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                <i className="bi bi-clock"></i> Monday - Saturday
+              </span>
+              <span
+                onClick={() => handleLinkClick("/enterprise")}
+                className="my-2 text-light"
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                <i className="bi bi-globe"></i> www.driftmarktech.com
+              </span>
+            </div>
+          </Col>
           <Col md={3} className="my-2">
             <div className="d-flex flex-column">
               <h4>Services</h4>

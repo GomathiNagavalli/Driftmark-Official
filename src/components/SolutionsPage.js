@@ -10,7 +10,7 @@ import coursalNew from "../assets/courosalNew.jpg";
 const SolutionsPage = () => {
   return (
     <>
-      <Container className="my-5 py-5 shadow bg-light">
+      <Container className="my-2 py-5 shadow bg-light">
         <div className="text-center my-3">
         <h2 className="fw-bold">
           Tailored Solutions to Meet Your
@@ -43,7 +43,7 @@ const SolutionsPage = () => {
                     Solutions */}
                   </h2>
                   <p style={{ color: "white" }}>
-                    Elevate your business with a stunning responsive website
+                    Elevate your business with a stunning responsive website.
                     {/* responsive website that drives engagement and conversions. */}
                     {/* Our expert web developers craft tailored solutions using the
                     latest technologies to help you stand out in the digital
@@ -59,7 +59,7 @@ const SolutionsPage = () => {
                 />
                 <Carousel.Caption>
                   <h2 style={{ color: "white" }}>
-                     Visually stunning mobile apps
+                      Stunning mobile apps
                   </h2>
                   <p style={{ color: "white" }}>
                     {/* Flutter app development services.  */}
@@ -76,7 +76,7 @@ const SolutionsPage = () => {
                 />
                 <Carousel.Caption>
                   <h2 style={{ color: "white" }}>
-                    Protecting Your Network Around the Clock
+                  Always-On Network Defense
                   </h2>
                   <p style={{ color: "white" }}>
                    Designed to safeguard your network from threats.

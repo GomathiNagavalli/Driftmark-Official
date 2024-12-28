@@ -19,10 +19,7 @@ const Contact = () => {
               </h1>
               <h1>Technology</h1>
             </div>
-            <p className="my-5">
-              Fill out the form to schedule a complimentary consultation and
-              learn how we can help you achieve your technology goals.
-            </p>
+            
            <div className="bg-light shadow py-5 px-3 my-5">
             <h3 className="small">Phone</h3>
             <p className="small">+91 6381475573</p>
@@ -31,6 +28,10 @@ const Contact = () => {
             <h3 className="small">Specialties</h3>
             <p className="small"> Mobile, Web, Desktop, Web Design, QA, and Testing</p>
             </div>
+            <p className="my-5">
+              Fill out the form to schedule a complimentary consultation and
+              learn how we can help you achieve your technology goals.
+            </p>
           </Col>
 
           <Col md={6}>

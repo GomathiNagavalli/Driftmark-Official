@@ -68,11 +68,11 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-5">
+      <Container className="my-2">
         <Row>
           <Col  className="text-center">
-            <div className="">
-              <h1 className="">Why Choose Driftmark Technology?</h1>
+            <div >
+              <h1 >Why Choose Driftmark Technology?</h1>
             </div>
           </Col>
         </Row>
@@ -105,7 +105,7 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="bg-light shadow">
+      <Container className="bg-light shadow my-3">
         <Row className="d-flex justify-content-center align-items-center py-5 px-2">
           <Col
             md={6}
