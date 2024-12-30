@@ -15,7 +15,7 @@ const About = () => {
   };
   return (
     <>
-      <Container className="py-5">
+      <Container className="py-4">
         <Row>
           <Col md={6}>
             <div>
