@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../components/Footer.css";
 // import Logo from "../assets/Driftmarklogo.jpg";
-// import { Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
+import Footerlogo from '../assets/OfficialLogo2.jpeg';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -41,7 +42,14 @@ const Footer = () => {
         <Row className="my-4 d-flex justify-content-center ">
           <Col md={3} className="my-2">
             <div className="d-flex flex-column">
-              <h4><i className="bi bi-twitter"></i></h4>
+            <Image
+              src={Footerlogo}
+              style={{ width: "45px", height: "40px",border:'1px solid white', borderRadius:'50%' }}
+              className="me-2"
+              alt="Driftmark Logo"
+            />
+              {/* <Image src={}   style={{ width: "40px", height: "30px" }}/> */}
+              {/* <h4><i className="bi bi-twitter"></i></h4> */}
               {/* <span
                 onClick={() => handleLinkClick("/")}
                 className="my-2 text-light "

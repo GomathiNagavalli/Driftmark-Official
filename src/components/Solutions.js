@@ -15,15 +15,15 @@ const Solutions = () => {
 
   return (
     <>
-      <Container className="text-center py-5">
+      <Container className="text-center py-4">
         <h1 className="fw-bold display-4 my-2 animate-fade-in text-md-start">
           Let Us Bring Your Product to Life
         </h1>
         <Row className="my-4 align-items-center" >
           <Col md={6} className="text-md-start text-center">
-            <h2 className=" animate-slide-up fw-bold d-none d-md-block">
+            <h1 className=" animate-slide-up fw-bold d-none d-md-block">
               Expert Software Development & Consulting Services
-            </h2>
+            </h1>
             <p className="my-3 text-muted">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program

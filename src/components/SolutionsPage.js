@@ -59,7 +59,7 @@ const SolutionsPage = () => {
                 />
                 <Carousel.Caption>
                   <h2 style={{ color: "white" }}>
-                      Stunning mobile apps
+                      Stunning Mobile Apps
                   </h2>
                   <p style={{ color: "white" }}>
                     {/* Flutter app development services.  */}
@@ -76,7 +76,7 @@ const SolutionsPage = () => {
                 />
                 <Carousel.Caption>
                   <h2 style={{ color: "white" }}>
-                  Always-On Network Defense
+                  24/7  Network Defense 
                   </h2>
                   <p style={{ color: "white" }}>
                    Designed to safeguard your network from threats.

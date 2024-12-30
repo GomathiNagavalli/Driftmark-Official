@@ -10,7 +10,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useLocation } from "react-router-dom";
 import "../components/NavigationBar.css";
-import logo from "../assets/Driftmarklogo.jpg";
+import OfficialLogo2 from "../assets/OfficialLogo2.jpeg";
 
 function NavigationBar() {
   const [show, setShow] = useState(false);
@@ -18,23 +18,24 @@ function NavigationBar() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+ 
 
   return (
     <>
       <Navbar expand="lg" className="navigation-bar border-bottom">
         <Container>
           <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
-            {/* <Image
-              src={logo}
-              style={{ width: "70px", height: "70px" }}
+            <Image
+              src={OfficialLogo2}
+              style={{ width: "40px", height: "30px" }}
               className="me-2"
               alt="Driftmark Logo"
-            /> */}
-            <i
+            />
+            {/* <i
                     className="bi bi-twitter"
                     style={{ color: "#0077b5" }}
-                  ></i>
-            <span className="text-teal fw-bold m-0" style={{color:'teal'}} >Driftmark Technology</span>
+                  ></i> */}
+            <span className="text-teal fw-bold m-0" style={{color:'teal'}} >Driftmark Technology </span>
           </Navbar.Brand>
           <Button
             variant="outline-primary"

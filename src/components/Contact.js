@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <>
-      <Container className="py-5">
+      <Container className="py-4">
         <Row className="justify-content-center ">
           <Col md={6}>
             <div className="text-center" style={fadeIn}>

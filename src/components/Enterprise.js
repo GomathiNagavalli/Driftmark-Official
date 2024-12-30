@@ -22,7 +22,7 @@ const Enterprise = () => {
 
   return (
     <>
-      <Container className="py-5">
+      <Container className="py-4">
         <Row>
           <Col md={6}>
             <h2 className="mt-3" style={fadeIn}>
