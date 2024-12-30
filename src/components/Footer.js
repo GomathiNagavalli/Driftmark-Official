@@ -175,7 +175,7 @@ const Footer = () => {
         <Row className="p-5 small">
           <Col className="text-center">
             <span>
-              <div>
+              <div className="d-flex justify-content-center">
               <span
                 onClick={() => handleLinkClick("termsandconditions")}
                 className="my-2 text-light mx-2"
