@@ -178,14 +178,14 @@ const Footer = () => {
               <div className="d-flex justify-content-center">
               <span
                 onClick={() => handleLinkClick("termsandconditions")}
-                className="my-2 text-light mx-2"
+                className="my-2 text-light "
                 style={{ cursor: "pointer", textDecoration: "none" }}
               >
                 Terms & Conditions
               </span>
               <span
                 onClick={() => handleLinkClick("privacypolicy")}
-                className="my-2 mx-2 text-light "
+                className="my-2 text-light "
                 style={{ cursor: "pointer", textDecoration: "none" }}
               >
                 Privacy Policy
