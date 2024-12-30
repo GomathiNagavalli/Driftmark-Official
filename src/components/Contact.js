@@ -28,7 +28,7 @@ const Contact = () => {
             <h3 className="small">Specialties</h3>
             <p className="small"> Mobile, Web, Desktop, Web Design, QA, and Testing</p>
             </div>
-            <p className="my-5">
+            <p className="my-5 text-center">
               Fill out the form to schedule a complimentary consultation and
               learn how we can help you achieve your technology goals.
             </p>

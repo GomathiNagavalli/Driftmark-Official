@@ -42,21 +42,16 @@ const Footer = () => {
         <Row className="my-4 d-flex justify-content-center ">
           <Col md={3} className="my-2">
             <div className="d-flex flex-column">
-            <Image
+              <div>
+              <Image
               src={Footerlogo}
-              style={{ width: "45px", height: "40px",border:'1px solid white', borderRadius:'50%' }}
+              style={{ width: "45px",borderRadius:'30%', height: "40px",padding:'4px' }}
               className="me-2"
               alt="Driftmark Logo"
             />
-              {/* <Image src={}   style={{ width: "40px", height: "30px" }}/> */}
-              {/* <h4><i className="bi bi-twitter"></i></h4> */}
-              {/* <span
-                onClick={() => handleLinkClick("/")}
-                className="my-2 text-light "
-                style={{ cursor: "pointer", textDecoration: "none" }}
-              >
-                <i className="bi bi-telephone"></i> +91 6381475573
-              </span> */}
+              </div>
+           
+             
               <span
                 onClick={() => window.open(`tel:+916381475573`)}
                 className="my-2 text-light"
@@ -180,6 +175,24 @@ const Footer = () => {
         <Row className="p-5 small">
           <Col className="text-center">
             <span>
+              <div>
+              <span
+                onClick={() => handleLinkClick("termsandconditions")}
+                className="my-2 text-light mx-2"
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                Terms & Conditions
+              </span>
+              <span
+                onClick={() => handleLinkClick("privacypolicy")}
+                className="my-2 mx-2 text-light "
+                style={{ cursor: "pointer", textDecoration: "none" }}
+              >
+                Privacy Policy
+              </span>
+              
+              </div>
+              
               ©2023 - 2024 Driftmark Technology Pvt. Ltd. All Rights Reserved
             </span>
           </Col>
@@ -191,220 +204,3 @@ const Footer = () => {
 
 export default Footer;
 
-// import React, { useState } from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-// import { Link, useNavigate } from "react-router-dom";
-
-// const Footer = () => {
-//   const navigate = useNavigate();
-
-//   const handleLinkClick = (path) => {
-//     navigate(path);
-//     window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
-//   };
-
-//   return (
-//     <>
-//       <Container
-//         fluid
-//         className="my-1  shadow text-light "
-//         style={{
-//           backgroundColor: "black",
-//           color: "white",
-//           borderRadius: "10px",
-//         }}
-//       >
-//         <Row>
-//           <Col>
-//             <div className="text-center mt-5">
-//               <h1 className="text-light">Let Us Bring Your Product to life</h1>
-//             </div>
-//           </Col>
-//         </Row>
-//         <Row className="my-3">
-//           <Col md={4} className="my-2">
-//             <div className="d-flex flex-column">
-//               <h4>Services</h4>
-//               <span
-//                 onClick={() => handleLinkClick("/")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Solutions
-//               </span>
-//               <span
-//                 onClick={() => handleLinkClick("/cloud")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Cloud
-//               </span>
-//               <span
-//                 onClick={() => handleLinkClick("/enterprise")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Enterprise
-//               </span>
-//             </div>
-//           </Col>
-//           <Col md={4} className="my-3">
-//             <div className="d-flex flex-column">
-//               <h4>Resources</h4>
-//               <span
-//                 onClick={() => handleLinkClick("/services")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Blog
-//               </span>
-//               <span
-//                 onClick={() => handleLinkClick("/contact")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Contact Us
-//               </span>
-//               <span
-//                 onClick={() => handleLinkClick("/services")}
-//                 style={{ textDecoration: "none", cursor: "pointer" }}
-//                 className="my-2 text-light"
-//               >
-//                 Downloads
-//               </span>
-//             </div>
-//           </Col>
-//           <Col md={4} className="my-3">
-//             <div className="d-flex flex-column">
-//               <h4 className="text-light">Follow Us</h4>
-//               <div
-//                 className="d-flex justify-content-between my-2"
-//                 style={{ width: "100px" }}
-//               >
-//                 <Link
-//                   to="https://www.linkedin.com/company/driftmark-technology/?originalSubdomain=in"
-//                   target="_blank"
-//                 >
-//                   <i className="bi bi-linkedin "></i>
-//                 </Link>
-//                 <Link
-//                   to="https://www.instagram.com/driftmarktechnology/"
-//                   target="_blank"
-//                   className=""
-//                 >
-//                   <i className="bi bi-instagram"></i>
-//                 </Link>
-//                 <Link to="mailto:driftmarktechnology@gmail.com">
-//                   <i className="bi bi-envelope"></i>
-//                 </Link>
-//               </div>
-//             </div>
-//           </Col>
-//         </Row>
-//         <Row className="p-5 small">
-//           <Col className="text-center">
-//             <span>
-//               ©2023 - 2024 Driftmark Technology Pvt. Ltd. All Rights Reserved
-//             </span>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </>
-//   );
-// };
-
-// export default Footer;
-
-// import React, { useState } from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-// import { Link } from "react-router-dom";
-
-// const Footer = () => {
-//   return (
-//     <>
-//       <Container
-//         fluid
-//         className="my-1  shadow text-light "
-//         style={{
-//           backgroundColor: "black",
-//           color: "white",
-//           borderRadius: "10px",
-//         }}
-//       >
-//         <Row>
-//           <Col>
-//             <div className="text-center mt-5">
-//               <h1 className="text-light">Let Us Bring Your Product to life</h1>
-//             </div>
-//           </Col>
-//         </Row>
-//           <Row className="my-3">
-//             <Col md={4} className="my-2">
-//               <div className="d-flex flex-column">
-//                 <h4>Services</h4>
-//                 <Link to="/" style={{ textDecoration: "none" }} className="my-2">
-//                   Solutions
-//                 </Link>
-//                 <Link to="/cloud" style={{ textDecoration: "none" }} className="my-2">
-//                   Cloud
-//                 </Link>
-//                 <Link to="/enterprise" style={{ textDecoration: "none" }} className="my-2">
-//                   Enterprise
-//                 </Link>
-//               </div>
-//               {/* <Link to={''}>Solutions</Link> */}
-//             </Col>
-//             <Col md={4} className="my-3">
-//               <div className="d-flex flex-column">
-//                 <h4>Resources</h4>
-//                 <Link to="/services" style={{ textDecoration: "none" }} className="my-2">
-//                   Blog
-//                 </Link>
-//                 <Link to="/contact" style={{ textDecoration: "none" }} className="my-2">
-//                   Contact Us
-//                 </Link>
-//                 <Link to="/services" style={{ textDecoration: "none" }} className="my-2">
-//                   Downloads
-//                 </Link>
-//               </div>
-//             </Col>
-//             <Col md={4} className="my-3">
-//               <div className="d-flex flex-column">
-//                 <h4 className="text-light">Follow Us</h4>
-//                 <div
-//                   className="d-flex justify-content-between my-2"
-//                   style={{ width: "100px" }}
-//                 >
-//                   <Link
-//                     to="https://www.linkedin.com/company/driftmark-technology/?originalSubdomain=in"
-//                     target="_blank"
-//                   >
-//                     <i className="bi bi-linkedin "></i>
-//                   </Link>
-//                   <Link
-//                     to="https://www.instagram.com/driftmarktechnology/"
-//                     target="_blank"
-//                     className=""
-//                   >
-//                     <i className="bi bi-instagram"></i>
-//                   </Link>
-//                   <Link to="mailto:driftmarktechnology@gmail.com">
-//                     <i className="bi bi-envelope"></i>
-//                   </Link>
-//                 </div>
-//               </div>
-//             </Col>
-//           </Row>
-//         <Row className="p-5 small">
-//         <Col className="text-center">
-//               <span>
-//                 ©2023 - 2024 Driftmark Technology Pvt. Ltd. All Rights Reserved
-//               </span>
-//             </Col>
-//         </Row>
-//       </Container>
-//     </>
-//   );
-// };
-
-// export default Footer;

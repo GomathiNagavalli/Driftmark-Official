@@ -14,7 +14,8 @@ import Enterprise from "./components/Enterprise";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -25,6 +26,8 @@ const App = () => {
         <Route path="About" element={<About />} />
         <Route path="Services" element={<Services />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="termsandconditions" element={<TermsAndConditions />}/>
+        <Route path="privacypolicy" element={<PrivacyPolicy />}/>
       </Route>
     )
   );
