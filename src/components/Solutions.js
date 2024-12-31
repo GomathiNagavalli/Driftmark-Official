@@ -39,7 +39,7 @@ const Solutions = () => {
               fluid
               className="shadow image-responsive"
               alt="Expert Services"
-              style={{width:'400px',height:'250px'}}
+              style={{width:'300px',height:'200px'}}
             />
           </Col>
         </Row>
