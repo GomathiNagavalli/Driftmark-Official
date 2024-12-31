@@ -30,23 +30,26 @@ const About = () => {
               </p>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="animate-zoom-in">
             <div className="text-center">
               <Image
                 src={Aboutimg}
                 fluid
                 rounded
-                style={{
-                  width: "500px",
-                  // maxWidth: "50",
-                  height: "300px",
-                  borderRadius: "10px",
-                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                  ...zoomIn,
-                  transition: "transform 0.2s ease-in-out",
-                }}
-                onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                
+                className="image-responsive"
+                style={{width:'400px',height:'250px'}}
+                // style={{
+                //   width: "500px",
+                //   // maxWidth: "50",
+                //   height: "300px",
+                //   borderRadius: "10px",
+                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                //   ...zoomIn,
+                //   transition: "transform 0.2s ease-in-out",
+                // }}
+                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
                 // className="shadow"
                 // style={{ width: "500px", height: "300px" }}
               ></Image>

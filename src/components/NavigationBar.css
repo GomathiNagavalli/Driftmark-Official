@@ -29,7 +29,7 @@
 } */
  /* Default link styling */
 .nav-item {
-  color: teal;
+  color: #0085BD;
   font-weight: 500;
   text-decoration: none;
   transition: border 0.3s ease, color 0.3s ease;
@@ -38,14 +38,14 @@
 /* Link styling on hover or focus */
 .nav-item:hover,
 .nav-item:focus {
-  color: #ff7700; /* Optional hover color for text */
+  color: #00B6D3; /* Optional hover color for text */
   text-decoration: none;
 }
 
 /* Active link styling with orange border */
 .active-link {
-  border-bottom: 3px solid #ff7700; /* Highlighted border */
-  color: teal !important;
+  border-bottom: 3px solid #00B6D3; /* Highlighted border */
+  color:#0085BD !important;
 }
 
 /* Optional transition for smooth effect */

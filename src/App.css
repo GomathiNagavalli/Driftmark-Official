@@ -4,17 +4,23 @@
 
 h1{
   /* color: rgba(5, 5, 124, 0.882);  */
-  color:#008080;
+  /* color:#008080; */
+  
+  color:#00B6D3;
   font-size: 40px;
   font-weight: bold;
 }
 h2{
   font-size: 32px;
-  color: teal;
+  color:#0085BD;
+  
+  /* color: teal; */
+ 
   font-weight: bold;
 }
 h3{
- color:#FF8C00;
+ /* color:#FF8C00; */
+ color:#1294A7;
  font-size: 28px;
  font-weight: bold;
 }

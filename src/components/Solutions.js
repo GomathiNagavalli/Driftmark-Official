@@ -16,14 +16,14 @@ const Solutions = () => {
   return (
     <>
       <Container className="text-center py-4">
-        <h1 className="fw-bold display-4 my-2 animate-fade-in text-md-start">
+        <h1 className="fw-bold  my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h1>
-        <Row className="my-4 align-items-center" >
+        <Row className="my-4 align-items-center">
           <Col md={6} className="text-md-start text-center">
-            <h1 className=" animate-slide-up fw-bold d-none d-md-block">
+            <h2 className=" animate-slide-up fw-bold d-none d-md-block">
               Expert Software Development & Consulting Services
-            </h1>
+            </h2>
             <p className="my-3 text-muted">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program
@@ -39,6 +39,7 @@ const Solutions = () => {
               fluid
               className="shadow image-responsive"
               alt="Expert Services"
+              style={{width:'400px',height:'250px'}}
             />
           </Col>
         </Row>
@@ -48,8 +49,8 @@ const Solutions = () => {
 
       <Container className="text-center py-5">
         <div className="animate-slide-up">
-          <h1 className="fw-bold">We're Dedicated to Your</h1>
-          <h1 className="fw-bold">Business Success</h1>
+          <h2 className="fw-bold">We're Dedicated to Your</h2>
+          <h2 className="fw-bold">Business Success</h2>
           <Button
             className="mt-4 btn-lg custom-button"
             onClick={() => handleLinkClick("/contact")}

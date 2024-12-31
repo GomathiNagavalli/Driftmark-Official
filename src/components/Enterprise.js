@@ -38,26 +38,27 @@ const Enterprise = () => {
               enhance customer experiences.
             </p>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="animate-zoom-in">
             <div className="text-center">
               <Image
                 src={Enterpriseimg2}
                 fluid
                 rounded
+                className="image-responsive"
                 // className="shadow"
 
                 // style={{ width: "500px", height: "300px" }}
-                style={{
-                  width: "100%",
-                  maxWidth: "500px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                  ...zoomIn,
-                  transition: "transform 0.2s ease-in-out",
-                }}
-                onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                // style={{
+                //   width: "100%",
+                //   maxWidth: "500px",
+                //   height: "auto",
+                //   borderRadius: "10px",
+                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                //   ...zoomIn,
+                //   transition: "transform 0.2s ease-in-out",
+                // }}
+                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
               />
             </div>
           </Col>

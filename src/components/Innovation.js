@@ -46,23 +46,24 @@ const Innovation = () => {
               </p>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} className="animate-zoom-in">
             <div className="text-center">
               <Image
                 src={cloudnew}
+                className="image-responsive"
                 fluid
                 rounded
-                style={{
-                  width: "100%",
-                  maxWidth: "500px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                  ...zoomIn,
-                  transition: "transform 0.2s ease-in-out",
-                }}
-                onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                // style={{
+                //   width: "100%",
+                //   maxWidth: "500px",
+                //   height: "auto",
+                //   borderRadius: "10px",
+                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                //   ...zoomIn,
+                //   transition: "transform 0.2s ease-in-out",
+                // }}
+                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
               />
             </div>
           </Col>
@@ -72,13 +73,13 @@ const Innovation = () => {
         <Row>
           <Col  className="text-center">
             <div >
-              <h1 >Why Choose Driftmark Technology?</h1>
+              <h2 >Why Choose Driftmark Technology?</h2>
             </div>
           </Col>
         </Row>
         <Row className="my-2">
           <Col md={4}>
-            <h3 style={{ color: "#FF8C00" }}>Mobile Applications</h3>
+            <h3 >Mobile Applications</h3>
             <p>
               We provide Custom Software Development. We create tailored
               software solutions that meet the unique needs of our clients. We
@@ -87,7 +88,7 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
-            <h3 style={{ color: "#FF8C00" }}>Web Development</h3>
+            <h3 >Web Development</h3>
             <p>
               We build fast, secure, and scalable websites that drive business
               growth. IT Consulting: We provide expert advice and guidance to
@@ -95,7 +96,7 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
-            <h3 style={{ color: "#FF8C00" }}>Revolution</h3>
+            <h3 >Revolution</h3>
             <p>
               At Driftmark Technology, our mission is to empower businesses to
               succeed in the digital age. We strive to deliver exceptional
@@ -147,7 +148,7 @@ const Innovation = () => {
         <Row>
           <Col>
             <div className="text-center">
-              <h1>Driftmark Brings Your Vision to Life!</h1>
+              <h2>Driftmark Brings Your Vision to Life!</h2>
               <p>
                 Our team of experts specializes in delivering cutting-edge
                 solutions in frontend development, full-stack development, and
