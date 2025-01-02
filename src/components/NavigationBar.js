@@ -28,7 +28,7 @@ function NavigationBar() {
   return (
     <>
       <Navbar expand="lg" className="navigation-bar border-bottom">
-        <Container>
+        <Container className="my-3">
           <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
             <Image
               src={OfficialLogo2}
