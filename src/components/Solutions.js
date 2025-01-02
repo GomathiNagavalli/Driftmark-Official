@@ -39,7 +39,7 @@ const Solutions = () => {
               hardware, computer systems and assemble data processors, program
               designs, and to buy, sell, or otherwise deal in such hardware and
               software packages. We specialize in delivering solutions tailored
-              to your needs.
+              to your needs. As developers, we must prioritize inclusive design principles to ensure our websites and applications are usable by everyone, regardless of abilities or disabilities.
             </p>
           </Col>
           <Col md={6} className="text-center ">
