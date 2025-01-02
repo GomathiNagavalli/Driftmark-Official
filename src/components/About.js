@@ -20,8 +20,8 @@ const About = () => {
           <Col md={6}>
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
-              <h2 className="mt-3" style={fadeIn}>Scalable Solutions for</h2>
-              <h2 className="mb-3" style={fadeIn}>Ambitious Business</h2>
+              <h3 className="mt-3 animate-slide-up" >Scalable Solutions for</h3>
+              <h3 className="mb-3 animate-slide-up" >Ambitious Business</h3>
               <p className="my-4"> 
                 At Driftmark Technology, we understand that innovative
                 businesses like yours can't afford to be held back by IT
@@ -37,22 +37,22 @@ const About = () => {
                 fluid
                 rounded
                 
-                className="image-responsive"
-                style={{width:'400px',height:'250px'}}
-                // style={{
-                //   width: "500px",
-                //   // maxWidth: "50",
-                //   height: "300px",
-                //   borderRadius: "10px",
-                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                //   ...zoomIn,
-                //   transition: "transform 0.2s ease-in-out",
-                // }}
-                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
-                // className="shadow"
+                // className="image-responsive"
+                // style={{width:'400px',height:'250px'}}
+                style={{
+                  width: "500px",
+                  maxWidth: "50",
+                  height: "300px",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                className="shadow"
                 // style={{ width: "500px", height: "300px" }}
-              ></Image>
+              />
             </div>
           </Col>
         </Row>
@@ -63,7 +63,7 @@ const About = () => {
       >
         <div className="text-center py-5 px-2 shadow"
         style={{ backgroundColor: " rgb(246, 212, 140)", borderRadius: "10px" }}>
-          <h1 className="mt-3">About Our Expert Team</h1>
+          <h3 className="mt-3">About Our Expert Team</h3>
           <p className="my-3">
             Whether you're looking to enhance your online presence, streamline
             operations, or develop a custom mobile app, we've got you covered.

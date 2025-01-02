@@ -13,18 +13,28 @@ const Solutions = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const zoomIn = {
+    animation: "zoomIn 1s ease-in",
+  };
+
   return (
     <>
       <Container className="text-center py-4">
-        <h1 className="fw-bold  my-2 animate-fade-in text-md-start" >
+        {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
+        </h2> */}
+        <h1 className="fw-bold display-4  my-2 animate-fade-in text-md-start" >
+        Expert Software Development & Consulting Services
         </h1>
         <Row className="my-4 align-items-center">
           <Col md={6} className="text-md-start text-center">
-            <h2 className=" animate-slide-up fw-bold d-none d-md-block">
+            {/* <h1 className=" animate-slide-up fw-bold d-none d-md-block">
               Expert Software Development & Consulting Services
-            </h2>
-            <p className="my-3 text-muted">
+            </h1> */}
+            <h3 className=" animate-slide-up  d-none d-md-block">
+            Let Us Bring Your Product to Life
+            </h3>
+            <p className=" text-muted">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program
               designs, and to buy, sell, or otherwise deal in such hardware and
@@ -32,14 +42,24 @@ const Solutions = () => {
               to your needs.
             </p>
           </Col>
-          <Col md={6} className="text-center animate-zoom-in">
+          <Col md={6} className="text-center ">
             <Image
               src={Frontpage2}
               rounded
               fluid
               className="shadow image-responsive"
               alt="Expert Services"
-              style={{width:'300px',height:'200px'}}
+              style={{
+                width: "100%",
+                maxWidth: "500px",
+                height: "auto",
+                borderRadius: "10px",
+                boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                ...zoomIn,
+                transition: "transform 0.2s ease-in-out",
+              }}
+              onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+              onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
             />
           </Col>
         </Row>
@@ -49,8 +69,8 @@ const Solutions = () => {
 
       <Container className="text-center py-5">
         <div className="animate-slide-up">
-          <h2 className="fw-bold">We're Dedicated to Your</h2>
-          <h2 className="fw-bold">Business Success</h2>
+          <h3 className="fw-bold">We're Dedicated to Your</h3>
+          <h3 className="fw-bold">Business Success</h3>
           <Button
             className="mt-4 btn-lg custom-button"
             onClick={() => handleLinkClick("/contact")}

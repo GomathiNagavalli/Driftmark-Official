@@ -12,10 +12,10 @@ const SolutionsPage = () => {
     <>
       <Container className="my-2 py-5 shadow bg-light">
         <div className="text-center my-3">
-        <h2 className="fw-bold">
+        <h3 className="fw-bold">
           Tailored Solutions to Meet Your
-        </h2>
-        <h2 className="fw-bold"> Unique Requirements</h2>
+        </h3>
+        <h3 className="fw-bold"> Unique Requirements</h3>
         </div>
         
         <p className="text-center my-4">
@@ -37,11 +37,11 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h2 style={{ color: "white" }}>
+                  <h3 style={{ color: "white" }}>
                     Transform Your Online Presence
                      {/* with Custom Web Development
                     Solutions */}
-                  </h2>
+                  </h3>
                   <p style={{ color: "white" }}>
                     Elevate your business with a stunning responsive website.
                     {/* responsive website that drives engagement and conversions. */}
@@ -58,9 +58,9 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h2 style={{ color: "white" }}>
+                  <h3 style={{ color: "white" }}>
                       Stunning Mobile Apps
-                  </h2>
+                  </h3>
                   <p style={{ color: "white" }}>
                     {/* Flutter app development services.  */}
                     Cross-platform
@@ -75,9 +75,9 @@ const SolutionsPage = () => {
                   style={{ filter: "brightness(50%)", objectFit: "cover" }}
                 />
                 <Carousel.Caption>
-                  <h2 style={{ color: "white" }}>
+                  <h3 style={{ color: "white" }}>
                   24/7  Network Defense 
-                  </h2>
+                  </h3>
                   <p style={{ color: "white" }}>
                    Designed to safeguard your network from threats.
                     {/* Our team of New England-based experts is always on standby,

@@ -20,7 +20,7 @@ const Blog = () => {
         <Col md={6}>
           {/* <h2 className="d-none d-md-block" style={fadeIn}>Transforming Businesses through Innovative</h2>
           <h2 className="d-none d-md-block" style={fadeIn}> Software Solutions</h2> */}
-          <h2 style={fadeIn}>Driftmark Technology Story</h2>
+          <h3 className="animate-slide-up">Driftmark Technology Story</h3>
           <p className="mt-3">
             In today's fast-paced digital landscape, businesses need innovative
             software solutions to stay ahead of the competition. Driftmark
@@ -42,7 +42,7 @@ const Blog = () => {
             ...zoomIn,
             transition: "transform 0.2s ease-in-out",
           }}
-          onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
           onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
         ></Image>
         </Col>
@@ -69,7 +69,7 @@ const Blog = () => {
               ...zoomIn,
               transition: "transform 0.2s ease-in-out",
             }}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
           />
         </Col>
@@ -112,7 +112,7 @@ const Blog = () => {
               ...zoomIn,
               transition: "transform 0.2s ease-in-out",
             }}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
+            onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
           />
         </Col>
@@ -131,29 +131,36 @@ const Blog = () => {
         </Col>
         <Col md={6}>
           <ul className="text-muted">
+            <p>
             <li>
               {" "}
-              <span className="fw-bold">Customized solutions : </span>We deliver
+              <span className="fw-bold d-block" style={{textDecoration:'underline'}}>Customized solutions : </span>We deliver
               tailored software solutions that meet the unique needs of our
               clients.
             </li>
+            </p>
+            <p>
             <li>
               {" "}
-              <span className="fw-bold">Expertise :</span> Our team of
+              <span className="fw-bold d-block" style={{textDecoration:'underline'}}>Expertise :</span> Our team of
               experienced developers, designers, and project managers ensures
               that our projects are delivered to the highest quality standards.
             </li>
+            </p>
+            <p>
             <li>
               {" "}
-              <span className="fw-bold">Cost-effectiveness : </span>We offer
+              <span className="fw-bold d-block" style={{textDecoration:'underline'}}>Cost-effectiveness : </span>We offer
               competitive pricing without compromising on quality.
             </li>
+            </p>
+            <p>
             <li>
               {" "}
-              <span className="fw-bold">Agile methodology : </span>We follow an
+              <span className="fw-bold d-block" style={{textDecoration:'underline'}}>Agile methodology : </span>We follow an
               agile approach to ensure that our projects are delivered quickly
               and efficiently.
-            </li>
+            </li></p>
           </ul>
         </Col>
       </Row>

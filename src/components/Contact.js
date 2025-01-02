@@ -12,12 +12,13 @@ const Contact = () => {
       <Container className="py-4">
         <Row className="justify-content-center ">
           <Col md={6}>
-            <div className="text-center" style={fadeIn}>
-              <h1 classNamem="my-3">
+            <div className="text-center animate-slide-up" >
+              <h3 classNamem="my-3">
                 Take the First Step Towards{" "}
-                <span style={{ color: "orange" }}> Hassle-Free</span>{" "}
-              </h1>
-              <h1>Technology</h1>
+                <span style={{ color: "skyblue" }}> Hassle-Free</span>{" "}
+                Technology
+              </h3>
+              {/* <h3></h3> */}
             </div>
             
            <div className="bg-light shadow py-5 px-3 my-5">

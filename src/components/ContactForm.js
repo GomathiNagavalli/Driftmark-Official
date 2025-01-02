@@ -58,8 +58,8 @@ function ContactForm() {
 
   return (
     <Container>
-      <div className="form-container">
-        <Form onSubmit={handleSubmit}>
+      <div className="form-container" style={{background:'linear-gradient(to right, skyblue, skyblue) border-box'}}>
+        <Form onSubmit={handleSubmit} >
           {/* Input Fields */}
           {[
             { label: "First Name", name: "firstName", required: true },
@@ -67,7 +67,7 @@ function ContactForm() {
             { label: "Email", name: "email", required: true },
           ].map(({ label, name, required }, index) => (
             <Form.Group controlId={name} key={index} className="mb-3">
-              <Form.Label style={{ color: "orange" }}>
+              <Form.Label style={{ color: "blue" }}>
                 {label} {required && <span style={{ color: "red" }}>*</span>}
               </Form.Label>
               <Form.Control
@@ -77,7 +77,7 @@ function ContactForm() {
                 onChange={handleChange}
                 placeholder={`Enter ${label.toLowerCase()}`}
                 style={{
-                  borderColor: errors[name] ? "red" : "teal",
+                  borderColor: errors[name] ? "red" : "skyblue",
                   borderWidth: "2px",
                 }}
               />
@@ -89,7 +89,7 @@ function ContactForm() {
 
           {/* Password Field with Eye Icon */}
           <Form.Group controlId="password" className="mb-3">
-            <Form.Label style={{ color: "orange" }}>
+            <Form.Label style={{ color: "blue" }}>
               Password <span style={{ color: "red" }}>*</span>
             </Form.Label>
             <div style={{ position: "relative" }}>
@@ -100,7 +100,7 @@ function ContactForm() {
                 onChange={handleChange}
                 placeholder="Enter password"
                 style={{
-                  borderColor: errors.password ? "red" : "teal",
+                  borderColor: errors.password ? "red" : "skyblue",
                   borderWidth: "2px",
                   paddingRight: "40px", // Extra space for the icon
                 }}
@@ -127,7 +127,7 @@ function ContactForm() {
 
           {/* Message Field */}
           <Form.Group controlId="message" className="mb-3">
-            <Form.Label style={{ color: "orange" }}>
+            <Form.Label style={{ color: "blue" }}>
               Message (Optional)
             </Form.Label>
             <Form.Control
@@ -138,7 +138,7 @@ function ContactForm() {
               onChange={handleChange}
               placeholder="Enter your message"
               style={{
-                borderColor: errors.message ? "red" : "teal",
+                borderColor: errors.message ? "red" : "skyblue",
                 borderWidth: "2px",
               }}
             />

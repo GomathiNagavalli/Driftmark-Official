@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import cloudnew from "../assets/cloudnew.jpg";
+// import Solutions from "./Solutions";
+
 
 const Innovation = () => {
   const navigate = useNavigate();
@@ -31,9 +33,9 @@ const Innovation = () => {
         <Row>
           <Col md={6}>
             <div>
-              <h2 className="my-3" style={fadeIn}>
+              <h3 className="my-3 animate-slide-up" >
                 Our Mission
-              </h2>
+              </h3>
               <p
                 className="my-4"
                 
@@ -46,39 +48,39 @@ const Innovation = () => {
               </p>
             </div>
           </Col>
-          <Col md={6} className="animate-zoom-in">
+          <Col md={6} className="">
             <div className="text-center">
               <Image
                 src={cloudnew}
                 className="image-responsive"
                 fluid
                 rounded
-                // style={{
-                //   width: "100%",
-                //   maxWidth: "500px",
-                //   height: "auto",
-                //   borderRadius: "10px",
-                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                //   ...zoomIn,
-                //   transition: "transform 0.2s ease-in-out",
-                // }}
-                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                style={{
+                  width: "100%",
+                  maxWidth: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
               />
             </div>
           </Col>
         </Row>
       </Container>
-      <Container className="my-2">
+      <Container className="my-4 bg-light shadow ">
         <Row>
           <Col  className="text-center">
             <div >
-              <h2 >Why Choose Driftmark Technology?</h2>
+              <h3 className="my-2">Why Choose Driftmark Technology?</h3>
             </div>
           </Col>
         </Row>
         <Row className="my-2">
-          <Col md={4}>
+          <Col md={4} className="my-3">
             <h3 >Mobile Applications</h3>
             <p>
               We provide Custom Software Development. We create tailored
@@ -87,7 +89,7 @@ const Innovation = () => {
               scalable.
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="my-3">
             <h3 >Web Development</h3>
             <p>
               We build fast, secure, and scalable websites that drive business
@@ -95,7 +97,7 @@ const Innovation = () => {
               help businesses navigate the complexities of technology.
             </p>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="my-3">
             <h3 >Revolution</h3>
             <p>
               At Driftmark Technology, our mission is to empower businesses to
@@ -106,11 +108,11 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="bg-light shadow my-3">
-        <Row className="d-flex justify-content-center align-items-center py-5 px-2">
+      <Container className="" >
+        <Row className="d-flex  justify-content-center align-items-center">
           <Col
             md={6}
-            className="p-3"
+            className="p-3 my-3"
             style={{
               ...borderAnimation,
               display: "flex",
@@ -119,11 +121,11 @@ const Innovation = () => {
               justifyContent: "center",
               backgroundColor: "#1c1b1b",
               color: "white",
-              borderRadius: "10px",
+              // borderRadius: "10px",
               textAlign: "center",
             }}
           >
-            <h2>Your partner in business success</h2>
+            <h3>Your partner in business success</h3>
             <Button
               className="mt-3 btn-lg custom-button"
               
@@ -148,7 +150,7 @@ const Innovation = () => {
         <Row>
           <Col>
             <div className="text-center">
-              <h2>Driftmark Brings Your Vision to Life!</h2>
+              <h3>Driftmark Brings Your Vision to Life!</h3>
               <p>
                 Our team of experts specializes in delivering cutting-edge
                 solutions in frontend development, full-stack development, and

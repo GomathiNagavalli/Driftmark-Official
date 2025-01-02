@@ -25,9 +25,9 @@ const Enterprise = () => {
       <Container className="py-4">
         <Row>
           <Col md={6}>
-            <h2 className="mt-3" style={fadeIn}>
+            <h3 className="mt-3 animate-slide-up" >
               Commercial Solutions
-            </h2>
+            </h3>
 
             <p className="my-4">
               At Driftmark Technology, we understand the complexities of
@@ -44,21 +44,21 @@ const Enterprise = () => {
                 src={Enterpriseimg2}
                 fluid
                 rounded
-                className="image-responsive"
+                // className="image-responsive"
                 // className="shadow"
 
                 // style={{ width: "500px", height: "300px" }}
-                // style={{
-                //   width: "100%",
-                //   maxWidth: "500px",
-                //   height: "auto",
-                //   borderRadius: "10px",
-                //   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
-                //   ...zoomIn,
-                //   transition: "transform 0.2s ease-in-out",
-                // }}
-                // onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
-                // onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+                style={{
+                  width: "100%",
+                  maxWidth: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
               />
             </div>
           </Col>
@@ -68,7 +68,7 @@ const Enterprise = () => {
         <Row className=" ">
           <Col>
             <div className="text-center ">
-              <h2 className="my-2"> Digital Transformation</h2>
+              <h3 className="my-2"> Digital Transformation</h3>
               <p>
                 We help enterprises navigate the digital landscape by developing
                 strategies, designing solutions, and implementing technologies
@@ -84,7 +84,7 @@ const Enterprise = () => {
             padding: "30px",
           }}
         >
-          <h2>Aligning IT with Your Business Vision</h2>
+          <h3>Aligning IT with Your Business Vision</h3>
 
           <p className="mt-3 ">
             Let's collaborate to develop a strategic IT roadmap tailored to your
