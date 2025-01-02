@@ -23,10 +23,10 @@ const Solutions = () => {
         {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h2> */}
-        <h1 className="fw-bold display-4  my-2 animate-fade-in text-md-start" >
+        <h1 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
         Expert Software Development & Consulting Services
         </h1>
-        <Row className="my-4 align-items-center">
+        <Row className="my-4 justify-content-center">
           <Col md={6} className="text-md-start text-center">
             {/* <h1 className=" animate-slide-up fw-bold d-none d-md-block">
               Expert Software Development & Consulting Services
@@ -122,7 +122,7 @@ const Solutions = () => {
           </Col>
           <Col md={6}>
             <h3 className="fw-bold">
-              Expert Support for Ambitious Organizations
+              Expert Support for Organizations
             </h3>
             <p className="text-muted">
               We amplify the capabilities of in-house IT teams at larger
