@@ -12,10 +12,10 @@ const SolutionsPage = () => {
     <>
       <Container className="my-2 py-5 shadow bg-light">
         <div className="text-center my-3">
-        <h3 className="fw-bold">
+        <h3 className="fw-bold mt-3">
           Tailored Solutions to Meet Your
         </h3>
-        <h3 className="fw-bold"> Unique Requirements</h3>
+        <h3 className="fw-bold mb-3"> Unique Requirements</h3>
         </div>
         
         <p className="text-center my-4">

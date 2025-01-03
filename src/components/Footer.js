@@ -18,10 +18,10 @@ const Footer = () => {
     <>
       <Container
         fluid
-        className="shadow"
+        className="shadow mt-2"
         style={{
           backgroundColor: "white",
-          background: 'linear-gradient(to bottom, #ffffff 0%, #ffffff 30%,rgb(189, 198, 242) 100%)'
+          background: 'linear-gradient(to bottom, #ffffff 0%, #ffffff 30%,rgb(198, 231, 239) 100%)'
         }}
       >
         <Row style={{ backgroundColor: "white" }}>
