@@ -3,6 +3,9 @@ import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import "../components/Solutions.css";
 import { useNavigate } from "react-router-dom";
 import Enterpriseimg2 from "../assets/Enterpriseimg.jpg";
+import Flutter from '../assets/Flutter.jpg';
+import TechnologyFingertip from '../assets/TechnologyFingertip.jpg'
+import Fullstack from '../assets/ReactImg.jpg'
 
 const Enterprise = () => {
   const navigate = useNavigate();
@@ -24,8 +27,8 @@ const Enterprise = () => {
     <>
       <Container className="py-4 mt-2">
         <Row className="my-4">
-          <Col md={6}>
-            <h3 className="animate-slide-up">Commercial Solutions</h3>
+          <Col>
+            <h1 className="display-4 fw-bold animate-slide-up">Commercial Solutions</h1>
 
             <p>
               At Driftmark Technology, we understand the complexities of
@@ -41,7 +44,9 @@ const Enterprise = () => {
               in their respective markets.
             </p>
           </Col>
-          <Col md={6} className="animate-zoom-in">
+          </Row>
+          <Row>
+          <Col className="animate-zoom-in">
             <div className="text-center">
               <Image
                 src={Enterpriseimg2}
@@ -53,7 +58,7 @@ const Enterprise = () => {
                 // style={{ width: "500px", height: "300px" }}
                 style={{
                   width: "100%",
-                  maxWidth: "500px",
+                  // maxWidth: "500px",
                   height: "auto",
                   borderRadius: "10px",
                   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
@@ -67,7 +72,7 @@ const Enterprise = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-4 shadow bg-light py-4 px-2">
+      <Container className="my-5 shadow bg-light py-4 px-2">
         <Row>
           <Col>
             <div className="text-center ">
@@ -87,9 +92,9 @@ const Enterprise = () => {
             padding: "30px",
           }}
         >
-          <h3>Aligning IT with Your Business Vision</h3>
+          <h3 className="my-3">Aligning IT with Your Business Vision</h3>
 
-          <p className="mt-3 ">
+          <p>
             Let's collaborate to develop a strategic IT roadmap tailored to your
             organization's unique goals. Our technical experts will help you
             bridge the gap between IT and business objectives, ensuring your
@@ -101,6 +106,19 @@ const Enterprise = () => {
       <Container className="py-4 my-4">
         <Row>
           <Col md={4}>
+          <Image src={Flutter} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
             <h3 className="my-3">Flutter MobileApp Development</h3>
             <p>
               Flutter is an open-source mobile app development framework created
@@ -109,6 +127,19 @@ const Enterprise = () => {
             </p>
           </Col>
           <Col md={4}>
+          <Image src={Fullstack} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(25, 22, 22, 0.33)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
             <h3 className="my-3">Technologies In Fingertip</h3>
             <p>
               {" "}
@@ -122,6 +153,19 @@ const Enterprise = () => {
           </Col>
 
           <Col nd={4}>
+          <Image src={TechnologyFingertip} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
             <h3 className="my-3">Experts In FullStack Development</h3>
             <p>
               Designing and developing the user interface and user experience

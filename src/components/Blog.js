@@ -20,7 +20,7 @@ const Blog = () => {
         <Col md={6}>
           {/* <h2 className="d-none d-md-block" style={fadeIn}>Transforming Businesses through Innovative</h2>
           <h2 className="d-none d-md-block" style={fadeIn}> Software Solutions</h2> */}
-          <h3 className="animate-slide-up">Driftmark Technology Story</h3>
+          <h1 className="animate-slide-up display-4 fw-bold">Driftmark Technology Story</h1>
           <p className="">
             In today's fast-paced digital landscape, businesses need innovative
             software solutions to stay ahead of the competition. Driftmark

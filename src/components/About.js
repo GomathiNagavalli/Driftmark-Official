@@ -4,6 +4,9 @@ import "../components/Solutions.css";
 import Aboutimg from "../assets/Aboutimg.jpg";
 import "../components/Solutionspage.css";
 // import SolutionsPage from "./SolutionsPage";
+import Consulting from '../assets/Consulting.jpg'
+import CustionSolution from '../assets/CustomSolution.jpg'
+import Cyber from '../assets/Cyber.jpg'
 
 const About = () => {
   const fadeIn = {
@@ -17,12 +20,12 @@ const About = () => {
     <>
       <Container className="py-4 mt-2">
         <Row className="my-4">
-          <Col md={6}>
+          <Col>
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
-              <h3 className="animate-slide-up">
+              <h1 className="animate-slide-up display-4 fw-bold">
                 Scalable Solutions for Ambitious Business
-              </h3>
+              </h1>
               {/* <h3 className=" animate-slide-up" ></h3> */}
               <p>
                 At Driftmark Technology, we understand that innovative
@@ -35,8 +38,10 @@ const About = () => {
                 success.
               </p>
             </div>
-          </Col>
-          <Col md={6} className="animate-zoom-in">
+            </Col>
+            </Row>
+          <Row>
+          <Col  className="animate-zoom-in">
             <div className="text-center">
               <Image
                 src={Aboutimg}
@@ -45,9 +50,9 @@ const About = () => {
                 // className="image-responsive"
                 // style={{width:'400px',height:'250px'}}
                 style={{
-                  width: "500px",
-                  maxWidth: "50",
-                  height: "300px",
+                  width: "100%",
+                  // maxWidth: "500px",
+                  height: "auto",
                   borderRadius: "10px",
                   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
                   ...zoomIn,
@@ -84,6 +89,19 @@ const About = () => {
       <Container className="my-4 py-4">
         <Row >
           <Col md={4}>
+          <Image src={Cyber} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
             <h3 className="my-3">Cybersecurity</h3>
             <p>
               Our cybersecurity experts help enterprises protect their sensitive
@@ -92,6 +110,19 @@ const About = () => {
             </p>
           </Col>
           <Col md={4}>
+          <Image src={Consulting} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
             <h3 className="my-3">IT Consulting</h3>
             <p>
               We provide expert guidance and support to help enterprises make
@@ -100,6 +131,19 @@ const About = () => {
             </p>
           </Col>
           <Col md={4}>
+          <Image src={CustionSolution} fluid rounded
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+      />
             <h3 className="my-3">Custom Solutions</h3>
             <p>
               Our team develops tailored software solutions that meet the unique

@@ -4,6 +4,7 @@ import "../components/Solutions.css";
 import SolutionsPage from "./SolutionsPage";
 import { useNavigate } from "react-router-dom";
 import Frontpage2 from "../assets/Frontpage2.jpg";
+import HomeSecond from '../assets/HomeSecond.jpg'
 
 const Solutions = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const Solutions = () => {
         {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h2> */}
-        <h1 className="fw-bold display-6 my-3 animate-fade-in text-md-start">
+        <h1 className="fw-bold display-4 my-3 animate-fade-in text-md-start">
           Expert Software Development & Consulting Services
         </h1>
 
@@ -110,9 +111,28 @@ const Solutions = () => {
           </Col>
         </Row>
       </Container>
+      <Container >
+        <Row>
+          <Col>
+          <Image src={HomeSecond} rounded fluid className="bg-light shadow" 
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+          />
+          </Col>
+        </Row>
+      </Container>
 
       <Container className="my-5">
-        <Row className="my-4 bg-light py-4 px-1 shadow rounded animate-slide-up">
+        <Row className="my-4  py-4  animate-slide-up">
           <Col md={6}>
             <h3 className="fw-bold my-3">Building Dynamic Web Applications</h3>
             <p className="text-muted">

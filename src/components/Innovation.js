@@ -2,6 +2,10 @@ import React from "react";
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import cloudnew from "../assets/cloudnew.jpg";
+import MobileApp from '../assets/MobileApp.jpg';
+import Webdevelopment from '../assets/Webdevelopment.jpg'
+import Revolution from '../assets/Revolution.jpg'
+import InnovationSecond from '../assets/InnovationSecond.jpg'
 // import Solutions from "./Solutions";
 
 const Innovation = () => {
@@ -29,7 +33,7 @@ const Innovation = () => {
   return (
     <>
       <Container className="py-4 mt-2">
-        <Row className="my-4">
+        {/* <Row className="my-4">
           <Col md={6}>
             <div>
               <h3 className=" animate-slide-up">Our Mission</h3>
@@ -69,6 +73,49 @@ const Innovation = () => {
               />
             </div>
           </Col>
+        </Row> */}
+        <Row className="">
+          <Col >
+          <div>
+              <h1 className=" animate-slide-up display-4 fw-bold my-3">Our Mission</h1>
+              <p className="">
+                Driftmark Technology is a cutting-edge software development
+                company that specializes in creating innovative solutions for
+                businesses. Our team of expert developers, designers, and
+                project managers work collaboratively to deliver high-quality
+                products that meet the evolving needs of our clients. We strive
+                to foster a culture of innovation, creativity, and transparency,
+                ensuring that our clients receive exceptional service and
+                support throughout their project journey. With a focus on
+                agility, flexibility, and continuous improvement, we aim to
+                drive digital transformation and help businesses thrive in an
+                ever-changing technological landscape.
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row className="my-4">
+          <Col>
+          <div className="text-center">
+              <Image
+                src={cloudnew}
+                // className="image-responsive"
+                fluid
+                rounded
+                style={{
+                  width: "100%",
+                  // maxWidth: "500px",
+                  height: "auto",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+                  ...zoomIn,
+                  transition: "transform 0.2s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+              />
+            </div>
+          </Col>
         </Row>
       </Container>
       <Container className="my-4 py-4 bg-light shadow ">
@@ -79,8 +126,20 @@ const Innovation = () => {
             </div>
           </Col>
         </Row>
-        <Row>
+        <Row className="my-3">
           <Col md={4}>
+          <Image src={MobileApp} fluid rounded 
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}/>
             <h3 className="my-3">Mobile Applications</h3>
             <p>
               We provide Custom Software Development. We create tailored
@@ -90,6 +149,18 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
+          <Image src={Webdevelopment} fluid rounded 
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")} />
             <h3 className="my-3">Web Development</h3>
             <p>
               We build fast, secure, and scalable websites that drive business
@@ -98,6 +169,18 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
+          <Image src={Revolution} fluid rounded 
+          style={{
+            width: "100%",
+            // maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+            ...zoomIn,
+            transition: "transform 0.2s ease-in-out",
+          }}
+          onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+          onMouseOut={(e) => (e.target.style.transform = "scale(1)")}/>
             <h3 className="my-3">Revolution</h3>
             <p>
               At Driftmark Technology, our mission is to empower businesses to
@@ -143,6 +226,26 @@ const Innovation = () => {
               </p>
             </div>
           </Col>
+        </Row>
+      </Container>
+      <Container className="my-4">
+        <Row>
+          <Col>
+          
+        <Image src={InnovationSecond} rounded fluid 
+        style={{
+          width: "100%",
+          // maxWidth: "500px",
+          height: "auto",
+          borderRadius: "10px",
+          boxShadow: "0 4px 15px rgba(86, 48, 48, 0.2)",
+          ...zoomIn,
+          transition: "transform 0.2s ease-in-out",
+        }}
+        onMouseOver={(e) => (e.target.style.transform = "scale(1.01)")}
+        onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+        />
+        </Col>
         </Row>
       </Container>
       <Container className="py-4">
