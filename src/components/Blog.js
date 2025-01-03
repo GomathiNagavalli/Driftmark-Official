@@ -16,7 +16,7 @@ const Blog = () => {
   };
   return (
     <>
-      <Row className="my-4">
+      <Row className=" py-4 my-4 mt-4">
         <Col md={6}>
           {/* <h2 className="d-none d-md-block" style={fadeIn}>Transforming Businesses through Innovative</h2>
           <h2 className="d-none d-md-block" style={fadeIn}> Software Solutions</h2> */}

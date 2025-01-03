@@ -22,7 +22,7 @@ const Enterprise = () => {
 
   return (
     <>
-      <Container className="py-4">
+      <Container className="py-4 mt-4">
         <Row className="my-4">
           <Col md={6}>
             <h3 className="animate-slide-up">Commercial Solutions</h3>

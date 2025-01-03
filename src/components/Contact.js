@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <>
-      <Container className="py-4">
+      <Container className="py-4 mt-4">
         <Row className="justify-content-center my-4 ">
           <Col md={6}>
             <div className="text-center animate-slide-up" >

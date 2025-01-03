@@ -19,7 +19,7 @@ const Solutions = () => {
 
   return (
     <>
-      <Container className="text-center py-4">
+      <Container className="text-center py-4 mt-4">
         {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h2> */}
