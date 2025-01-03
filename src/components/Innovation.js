@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import cloudnew from "../assets/cloudnew.jpg";
 // import Solutions from "./Solutions";
 
-
 const Innovation = () => {
   const navigate = useNavigate();
 
@@ -30,21 +29,22 @@ const Innovation = () => {
   return (
     <>
       <Container className="py-4">
-        <Row>
+        <Row className="my-4">
           <Col md={6}>
             <div>
-              <h3 className="my-3 animate-slide-up" >
-                Our Mission
-              </h3>
-              <p
-                className="my-4"
-                
-              >
+              <h3 className=" animate-slide-up">Our Mission</h3>
+              <p className="">
                 Driftmark Technology is a cutting-edge software development
                 company that specializes in creating innovative solutions for
                 businesses. Our team of expert developers, designers, and
                 project managers work collaboratively to deliver high-quality
-                products that meet the evolving needs of our clients.
+                products that meet the evolving needs of our clients. We strive
+                to foster a culture of innovation, creativity, and transparency,
+                ensuring that our clients receive exceptional service and
+                support throughout their project journey. With a focus on
+                agility, flexibility, and continuous improvement, we aim to
+                drive digital transformation and help businesses thrive in an
+                ever-changing technological landscape.
               </p>
             </div>
           </Col>
@@ -71,17 +71,17 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-4 bg-light shadow ">
+      <Container className="my-4 py-4 bg-light shadow ">
         <Row>
-          <Col  className="text-center">
-            <div >
-              <h3 className="my-2">Why Choose Driftmark Technology?</h3>
+          <Col className="text-center">
+            <div>
+              <h3 className="my-3">Why Choose Driftmark Technology?</h3>
             </div>
           </Col>
         </Row>
-        <Row className="my-2">
-          <Col md={4} className="my-3">
-            <h3 >Mobile Applications</h3>
+        <Row>
+          <Col md={4}>
+            <h3 className="my-3">Mobile Applications</h3>
             <p>
               We provide Custom Software Development. We create tailored
               software solutions that meet the unique needs of our clients. We
@@ -89,16 +89,16 @@ const Innovation = () => {
               scalable.
             </p>
           </Col>
-          <Col md={4} className="my-3">
-            <h3 >Web Development</h3>
+          <Col md={4}>
+            <h3 className="my-3">Web Development</h3>
             <p>
               We build fast, secure, and scalable websites that drive business
               growth. IT Consulting: We provide expert advice and guidance to
               help businesses navigate the complexities of technology.
             </p>
           </Col>
-          <Col md={4} className="my-3">
-            <h3 >Revolution</h3>
+          <Col md={4}>
+            <h3 className="my-3">Revolution</h3>
             <p>
               At Driftmark Technology, our mission is to empower businesses to
               succeed in the digital age. We strive to deliver exceptional
@@ -108,11 +108,11 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="" >
+      <Container className="py-4">
         <Row className="d-flex  justify-content-center align-items-center">
           <Col
             md={6}
-            className="p-3 my-3"
+            className="p-3 my-4"
             style={{
               ...borderAnimation,
               display: "flex",
@@ -125,10 +125,9 @@ const Innovation = () => {
               textAlign: "center",
             }}
           >
-            <h3>Your partner in business success</h3>
+            <h3 className="my-3">Your partner in business success</h3>
             <Button
-              className="mt-3 btn-lg custom-button"
-              
+              className="my-2 btn-lg custom-button"
               onClick={() => handleLinkClick("/contact")}
             >
               Get in Touch
@@ -146,11 +145,11 @@ const Innovation = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="my-5">
+      <Container className="py-4">
         <Row>
           <Col>
             <div className="text-center">
-              <h3>Driftmark Brings Your Vision to Life!</h3>
+              <h3 className="my-3">Driftmark Brings Your Vision to Life!</h3>
               <p>
                 Our team of experts specializes in delivering cutting-edge
                 solutions in frontend development, full-stack development, and

@@ -58,7 +58,7 @@ function ContactForm() {
 
   return (
     <Container>
-      <div className="form-container" style={{background:'linear-gradient(to right, skyblue, skyblue) border-box'}}>
+      <div className="form-container">
         <Form onSubmit={handleSubmit} >
           {/* Input Fields */}
           {[

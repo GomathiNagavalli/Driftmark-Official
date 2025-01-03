@@ -1,6 +1,51 @@
 
- 
+ /* Static Navigation Bar */
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Keeps navbar above other content */
+  background-color: white; /* Matches your design */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Ensure content doesn't overlap the fixed navbar */
+body {
+  padding-top: 70px; /* Adjust based on navbar height */
+}
+
+/* Navigation link styles */
 .nav-item {
+  color: #0085BD;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: #00B6D3;
+  text-decoration: none;
+}
+
+.active-link {
+  border-bottom: 3px solid #00B6D3; /* Highlights the active page */
+  color: #0085BD !important;
+}
+
+.nav-item,
+.active-link {
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .nav-item {
   color: #0085BD;
   font-weight: 500;
   text-decoration: none;
@@ -24,6 +69,6 @@
 .nav-item,
 .active-link {
   transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
-} 
+}  */
 
 

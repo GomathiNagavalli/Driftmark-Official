@@ -16,12 +16,12 @@ const Blog = () => {
   };
   return (
     <>
-      <Row>
+      <Row className="my-4">
         <Col md={6}>
           {/* <h2 className="d-none d-md-block" style={fadeIn}>Transforming Businesses through Innovative</h2>
           <h2 className="d-none d-md-block" style={fadeIn}> Software Solutions</h2> */}
           <h3 className="animate-slide-up">Driftmark Technology Story</h3>
-          <p className="mt-3">
+          <p className="">
             In today's fast-paced digital landscape, businesses need innovative
             software solutions to stay ahead of the competition. Driftmark
             Technology, a leading software development company, has been helping
@@ -49,11 +49,11 @@ const Blog = () => {
       </Row>
       <Row className="my-4">
         <Col>
-        <h3 className="d-block d-md-none text-center">Transforming Businesses through Innovative</h3>
-          <h3 className="d-block d-md-none text-center"> Software Solutions</h3>
+        <h3 className="d-block d-md-none text-center mt-3">Transforming Businesses through Innovative</h3>
+          <h3 className="d-block d-md-none text-center mb-3"> Software Solutions</h3>
         </Col>
       </Row>
-      <Row className="d-flex align-items-center justify-content-center my-5  bg-light p-4 shadow">
+      <Row className="d-flex align-items-center justify-content-center my-4  bg-light p-4 shadow">
         <Col md={6}>
           <Image
             src={ITteam}
@@ -73,8 +73,8 @@ const Blog = () => {
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
           />
         </Col>
-        <Col md={6} className="mt-3">
-          <h3>Let's Shape the Future Together</h3>
+        <Col md={6}>
+          <h3 className="my-3">Let's Shape the Future Together</h3>
           <p>
             Discover how Driftmark Technology can empower your business to
             achieve new heights. Contact us today to explore our services and
@@ -84,7 +84,7 @@ const Blog = () => {
       </Row>
       <Row className="align-items-center justify-content-center my-5">
         <Col md={6}>
-          <h3>At Driftmark Technology</h3>
+          <h3 className="my-3 text-center">At Driftmark Technology</h3>
           <p>
             We follow a structured SDLC approach to ensure that our projects are
             delivered on time, within budget, and to the required quality
@@ -122,7 +122,7 @@ const Blog = () => {
         style={{ borderRadius: "10px" }}
       >
         <Col md={6}>
-          <h3 className="text-center ">
+          <h3 className="text-center my-3">
             Advantages of Partnering with Us
           </h3>
           <p className="text-center ">

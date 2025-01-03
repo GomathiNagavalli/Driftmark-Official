@@ -4,11 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 const TermsAndConditions = () => {
   return (
     <>
-      <Container className="my-4  bg-light shadow">
+      <Container className="py-4 bg-light shadow">
         <Row className="d-flex justify-content-center align-items-center">
           <Col md={10}>
             <div>
-              <h2 className="text-center my-3 ">Terms and Conditions</h2>
+              <h2 className="text-center my-3">Terms and Conditions</h2>
               {/* <h3>Introduction</h3> */}
               <p className="text-center">
                 Welcome to Driftmark Technology, part of the Driftmark Group of
@@ -17,7 +17,7 @@ const TermsAndConditions = () => {
                 transparency, mutual understanding, and professionalism in all
                 transactions and interactions.
               </p>
-              <h3>Definitions</h3>
+              <h3  style={{fontWeight:'normal'}}>Definitions</h3>
               <ul>
                 <li>
                   <p>
@@ -40,7 +40,7 @@ const TermsAndConditions = () => {
                   </p>
                 </li>
               </ul>
-              <h3>Scope of Work The</h3>
+              <h3 style={{fontWeight:'normal'}}>Scope of Work The</h3>
               <p>
                 Company will deliver services as outlined in the agreed project
                 proposal or contract. Any additional requests or changes beyond
@@ -51,7 +51,7 @@ const TermsAndConditions = () => {
                 all materials supplied are either owned or have the necessary
                 permissions for use.
               </p>
-              <h3>Payment Terms</h3>
+              <h3 style={{fontWeight:'normal'}}>Payment Terms</h3>
               <p>
                 A non-refundable deposit of [specify percentage or amount] is
                 required to initiate work. The remaining balance is due upon
@@ -59,7 +59,7 @@ const TermsAndConditions = () => {
                 the proposal. Late payments may incur a [specify percentage or
                 amount] late fee.
               </p>
-              <h3>Intellectual Property </h3>
+              <h3 style={{fontWeight:'normal'}}>Intellectual Property </h3>
               <p>
                 Ownership of the final deliverables will transfer to the Client
                 upon full payment, excluding any third-party software, tools, or
@@ -67,7 +67,7 @@ const TermsAndConditions = () => {
                 right to use non-sensitive parts of the project for portfolio
                 purposes.
               </p>
-              <h3>Revisions and Approvals</h3>
+              <h3  style={{fontWeight:'normal'}}>Revisions and Approvals</h3>
               <p>
                 {" "}
                 The Company provides [specify number] rounds of revisions as
@@ -76,13 +76,13 @@ const TermsAndConditions = () => {
                 timeline] of submission. Lack of feedback within this timeframe
                 will be considered as approval.
               </p>{" "}
-              <h3>Confidentiality</h3>
+              <h3  style={{fontWeight:'normal'}}>Confidentiality</h3>
               <p>
                 Both parties agree to keep all sensitive project-related
                 information confidential. The Company may use subcontractors,
                 provided they are also bound by confidentiality agreements.
               </p>{" "}
-              <h3> Limitation of Liability</h3>
+              <h3  style={{fontWeight:'normal'}}> Limitation of Liability</h3>
               <p>
                 {" "}
                 The Company is not responsible for any direct, indirect, or
@@ -91,7 +91,7 @@ const TermsAndConditions = () => {
                 claims related to copyright infringement or unauthorized content
                 provided by the Client.
               </p>
-              <h3> Termination</h3>
+              <h3 style={{fontWeight:'normal'}}> Termination</h3>
               <p>
                 {" "}
                 Either party may terminate the agreement with a [specify notice
@@ -99,13 +99,13 @@ const TermsAndConditions = () => {
                 outstanding payments for work completed shall be due
                 immediately.
               </p>{" "}
-              <h3>Third-Party Services</h3>
+              <h3 style={{fontWeight:'normal'}}>Third-Party Services</h3>
               <p>
                 {" "}
                 Any third-party subscriptions or fees are the sole
                 responsibility of the Client.
               </p>
-              <h3> Warranty and Support</h3>
+              <h3  style={{fontWeight:'normal'}}> Warranty and Support</h3>
               <p>
                 {" "}
                 The Company offers [specify warranty period, e.g., 30 days]
@@ -113,20 +113,20 @@ const TermsAndConditions = () => {
                 Extended maintenance or support contracts can be arranged at an
                 additional cost.
               </p>
-              <h3> Governing Law</h3>
+              <h3 style={{fontWeight:'normal'}}> Governing Law</h3>
               <p>
                 {" "}
                 These terms are governed by the laws of India, and any disputes
                 will be subject to the jurisdiction of Chennai courts.
               </p>
-              <h3> Changes to Terms</h3>
+              <h3  style={{fontWeight:'normal'}}> Changes to Terms</h3>
               <p>
                 {" "}
                 The Company reserves the right to amend these Terms and
                 Conditions at any time. Changes will be communicated via our
                 official website or directly to clients.
               </p>
-              <h3>Acceptance of Terms</h3>
+              <h3 style={{fontWeight:'normal'}}>Acceptance of Terms</h3>
               <p>
                 {" "}
                 By engaging with Driftmark Technology, the Client acknowledges

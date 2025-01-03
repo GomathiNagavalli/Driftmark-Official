@@ -7,8 +7,8 @@ import Train from "../assets/train.jpg";
 const Downloads = () => {
   return (
     <>
-      <Row className="">
-        <Col md={6} className="my-3 shadow py-5 ">
+      <Row className="my-4">
+        <Col md={6} className="shadow py-5">
           <Image src={Refix} style={{width:'100px', height:'100px'}}/>
           <h3>Refix Systems</h3>
           <p style={{fontSize:'14px'}}>
@@ -19,7 +19,7 @@ const Downloads = () => {
           </p>
           <Button onClick={() => window.open('https://refixsystems.com/','_blank')} className="btn btn-lg btn-primary">Download Now</Button>
         </Col>
-        <Col md={6} className="my-3 shadow py-5">
+        <Col md={6} className=" shadow py-5">
           <Image src={Train}  style={{width:'100px', height:'100px'}}/>
           <h3>Trains On Wheels</h3>
           <p style={{fontSize:'14px'}}>

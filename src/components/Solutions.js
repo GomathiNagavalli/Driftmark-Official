@@ -23,23 +23,31 @@ const Solutions = () => {
         {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h2> */}
-        <h1 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
-        Expert Software Development & Consulting Services
+        <h1 className="fw-bold display-6 my-3 animate-fade-in text-md-start">
+          Expert Software Development & Consulting Services
         </h1>
+
         <Row className="my-4 justify-content-center">
           <Col md={6} className="text-md-start text-center">
             {/* <h1 className=" animate-slide-up fw-bold d-none d-md-block">
               Expert Software Development & Consulting Services
             </h1> */}
-            <h3 className=" animate-slide-up  d-none d-md-block">
-            Let Us Bring Your Product to Life
+
+            <h3 className="animate-slide-up  d-none d-md-block">
+              Let Us Bring Your Product to Life
             </h3>
-            <p className=" text-muted">
+            <p className="text-muted">
               To carry on the business of dealing and maintenance of computer
               hardware, computer systems and assemble data processors, program
               designs, and to buy, sell, or otherwise deal in such hardware and
-              software packages. We specialize in delivering solutions tailored
-              to your needs. As developers, we must prioritize inclusive design principles to ensure our websites and applications are usable by everyone, regardless of abilities or disabilities.
+              software packages. In today's digital landscape, accessibility is
+              no longer an afterthought, but a crucial aspect of web
+              development. We specialize in delivering solutions tailored to
+              your needs. As developers, we must prioritize inclusive design
+              principles to ensure our websites and applications are usable by
+              everyone, regardless of abilities or disabilities. By embracing
+              accessibility, we not only expand our audience reach but also
+              contribute to a more equitable and user-friendly web ecosystem.
             </p>
           </Col>
           <Col md={6} className="text-center ">
@@ -67,12 +75,12 @@ const Solutions = () => {
 
       <SolutionsPage />
 
-      <Container className="text-center py-5">
+      <Container className="text-center my-4 py-4">
         <div className="animate-slide-up">
-          <h3 className="fw-bold">We're Dedicated to Your</h3>
-          <h3 className="fw-bold">Business Success</h3>
+          <h3 className="fw-bold mt-3">We're Dedicated to Your</h3>
+          <h3 className="fw-bold mb-3">Business Success</h3>
           <Button
-            className="mt-4 btn-lg custom-button"
+            className="my-1 btn-lg custom-button"
             onClick={() => handleLinkClick("/contact")}
           >
             Contact Us Today
@@ -80,20 +88,19 @@ const Solutions = () => {
         </div>
       </Container>
 
-      <Container className="mt-4">
+      <Container className="my-4">
         <Row>
-          <Col md={6} className="mb-4 animate-fade-in">
-            <h3 className="fw-bold">Transparent Fees for Total Clarity</h3>
+          <Col md={6} className="my-2 animate-fade-in">
+            <h3 className="fw-bold my-3">Transparent Fees for Total Clarity</h3>
             <p className="text-muted">
               When unexpected IT issues arise, the last thing you need is a
-              surprise bill. That's why we offer a simple, all-inclusive
-              monthly rate that covers all your IT needs. With our predictable
-              pricing, you can budget with confidence and focus on what matters
-              most.
+              surprise bill. That's why we offer a simple, all-inclusive monthly
+              rate that covers all your IT needs. With our predictable pricing,
+              you can budget with confidence and focus on what matters most.
             </p>
           </Col>
-          <Col md={6} className="mb-4 animate-fade-in">
-            <h3 className="fw-bold">The Driftmark Difference</h3>
+          <Col md={6} className="my-2 animate-fade-in">
+            <h3 className="fw-bold my-3">The Driftmark Difference</h3>
             <p className="text-muted">
               At Driftmark, expertise and experience come together to deliver
               unparalleled IT solutions. Our tailored services are backed by a
@@ -104,26 +111,25 @@ const Solutions = () => {
         </Row>
       </Container>
 
-      <Container>
-        <Row className="my-3 bg-light py-4 px-1 shadow rounded animate-slide-up">
-          <Col md={6} className="mb-4">
-            <h3 className="fw-bold">
-              Building Dynamic Web Applications 
-            </h3>
+      <Container className="my-4">
+        <Row className="my-2 bg-light py-4 px-1 shadow rounded animate-slide-up">
+          <Col md={6}>
+            <h3 className="fw-bold my-3">Building Dynamic Web Applications</h3>
             <p className="text-muted">
-            Create fast, scalable, and maintainable web applications with our expert web development solutions. Our team leverages the latest technologies to design and develop complex user interfaces, breaking them down into smaller, manageable components.
+              Create fast, scalable, and maintainable web applications with our
+              expert web development solutions. Our team leverages the latest
+              technologies to design and develop complex user interfaces,
+              breaking them down into smaller, manageable components.
             </p>
             <Button
-              className="mt-3 btn-lg custom-button"
+              className="my-2 btn-lg custom-button"
               onClick={() => handleLinkClick("/innovation")}
             >
               How It Works
             </Button>
           </Col>
           <Col md={6}>
-            <h3 className="fw-bold">
-              Expert Support for Organizations
-            </h3>
+            <h3 className="fw-bold my-3">Expert Support for Organizations</h3>
             <p className="text-muted">
               We amplify the capabilities of in-house IT teams at larger
               enterprises. Whether you need specialized expertise, additional
@@ -138,10 +144,6 @@ const Solutions = () => {
 };
 
 export default Solutions;
-
-
-
-
 
 // import React from "react";
 // import { Col, Container, Row, Image, Button } from "react-bootstrap";

@@ -20,20 +20,20 @@ const Footer = () => {
         fluid
         className="shadow"
         style={{
-          backgroundColor: "black",
-          color: "white",
-         
+          backgroundColor: "white",
+          background: 'linear-gradient(to bottom, #ffffff 0%, #ffffff 30%,rgb(189, 198, 242) 100%)'
         }}
       >
         <Row style={{ backgroundColor: "white" }}>
           <Col>
             <div className="text-center my-3 d-flex align-items-center justify-content-center">
-              <h1>Let Us Bring Your Product to life</h1>
+              <h1>Let Us Bring Your Product to life!</h1>
             </div>
           </Col>
         </Row>
-        <Row className="my-4 d-flex justify-content-center ">
-          <Col md={3} className="my-2">
+        
+        <Row className="my-4 mx-2 d-flex justify-content-between">
+          <Col md={4} className="my-2">
             <div className="d-flex flex-column">
               <div className="my-2">
                 <Image
@@ -41,7 +41,7 @@ const Footer = () => {
                   style={{
                     // width: "45px",
                     width: "35px",
-                    borderRadius: "30%",
+                    // borderRadius: "30%",
                     // height: "40px",
                     height: "27px",
                     // padding: "4px",
@@ -71,28 +71,32 @@ const Footer = () => {
               >
                 <i className="bi bi-globe"></i> www.driftmarktech.com
               </span> */}
-              <Link to="mailto:driftmarktechnology@gmail.com" className="my-2 text-light text-decoration-none">
-                  <i
-                    className="bi bi-envelope"
-                    // style={{ color: "#EA4335" }}
-                  ></i> Email
+              <span className="text-light">
+                Email-
+                <Link
+                  to="mailto:driftmarktechnology@gmail.com"
+                  className="my-2 text-light"
+                >
+                  driftmarktechnology@gmail.com
                 </Link>
+              </span>
             </div>
           </Col>
           <Col md={3} className="my-2">
             <div className="d-flex flex-column ">
-              <h4 className="my-2">Services</h4>
+              <h4 className="my-2" style={{fontWeight:'bold',  
+                 }}>Services</h4>
               <span
                 onClick={() => handleLinkClick("/")}
                 className="my-2 text-light "
-                style={{ cursor: "pointer", textDecoration: "none" }}
+                style={{ cursor: "pointer", textDecoration: "none",  }}
               >
                 Home
               </span>
               <span
                 onClick={() => handleLinkClick("/innovation")}
                 className="my-2 text-light"
-                style={{ cursor: "pointer", textDecoration: "none" }}
+                style={{ cursor: "pointer", textDecoration: "none", }}
               >
                 Innovation
               </span>
@@ -105,11 +109,13 @@ const Footer = () => {
               </span>
             </div>
           </Col>
+
           <Col md={3} className="my-2">
             <div className="d-flex flex-column">
-              <h4 className="my-2">Resources</h4>
+              <h4 className="my-2" style={{fontWeight:'bold',  
+                 }}>Resources</h4>
               <span
-                onClick={() => handleLinkClick("/services")}
+                onClick={() => handleLinkClick("/services/blog")}
                 className="my-2 text-light"
                 style={{ cursor: "pointer", textDecoration: "none" }}
               >
@@ -123,7 +129,7 @@ const Footer = () => {
                 Contact Us
               </span>
               <span
-                onClick={() => handleLinkClick("/services")}
+                onClick={() => handleLinkClick("/services/downloads")}
                 className="my-2 text-light"
                 style={{ cursor: "pointer", textDecoration: "none" }}
               >
@@ -131,9 +137,10 @@ const Footer = () => {
               </span>
             </div>
           </Col>
-          <Col md={3} className="my-2">
+          <Col md={2} className="my-2 ">
             <div className="d-flex flex-column">
-              <h4 className="my-2">Follow Us</h4>
+              <h4 className="my-2" style={{fontWeight:'bold',  
+                 }}>Follow Us</h4>
               <div
                 className="d-flex justify-content-between my-2"
                 style={{ width: "150px" }}
@@ -144,14 +151,14 @@ const Footer = () => {
                 >
                   <i
                     className="bi bi-linkedin"
-                    style={{ color: "#0077b5" }}
+                    style={{
+                      background:
+                        "linear-gradient(45deg, #0077b5, #005983, #003f5e)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      fontSize: "18px",
+                    }}
                   ></i>
-                </Link>
-                <Link
-                  to="https://x.com/DriftmarkTech/status/1868882210511896780"
-                  target="_blank"
-                >
-                  <i className="bi bi-twitter" style={{ color: "#1DA1F2" }}></i>
                 </Link>
 
                 <Link
@@ -161,10 +168,40 @@ const Footer = () => {
                 >
                   <i
                     className="bi bi-instagram"
-                    style={{ color: "#E1306C" }}
+                    style={{
+                      background:
+                        "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      fontSize: "18px",
+                    }}
                   ></i>
                 </Link>
-                
+
+                <Link
+                  to="https://www.facebook.com/share/1ETaAQHKDg/"
+                  target="_blank"
+                >
+                  <i
+                    className="bi bi-facebook"
+                    style={{
+                      background:
+                        "linear-gradient(45deg, #1877F2, #145DBE, #103E8C)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      fontSize: "18px",
+                    }}
+                  ></i>
+                </Link>
+                <Link
+                  to="https://x.com/i/flow/login?redirect_after_login=%2FDriftmarkTech"
+                  target="_blank"
+                >
+                  <i
+                    className="bi bi-twitter"
+                    style={{ color: "#1DA1F2", fontSize: "18px" }}
+                  ></i>
+                </Link>
               </div>
             </div>
           </Col>
@@ -176,14 +213,16 @@ const Footer = () => {
                 <span
                   onClick={() => handleLinkClick("termsandconditions")}
                   className="my-2 px-1 border-end border-primary text-light"
-                  style={{ cursor: "pointer", textDecoration: "none" }}>
+                  style={{ cursor: "pointer", textDecoration: "none" }}
+                >
                   Terms & Conditions
                 </span>
-                
+
                 <span
                   onClick={() => handleLinkClick("privacypolicy")}
-                  className="my-2 px-1 text-light "
-                  style={{ cursor: "pointer", textDecoration: "none" }}>
+                  className="my-2 px-1 text-light"
+                  style={{ cursor: "pointer", textDecoration: "none" }}
+                >
                   Privacy Policy
                 </span>
               </div>
@@ -191,6 +230,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        
       </Container>
     </>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "../components/Solutions.css";
 import Aboutimg from "../assets/Aboutimg.jpg";
-import '../components/Solutionspage.css';
+import "../components/Solutionspage.css";
 // import SolutionsPage from "./SolutionsPage";
 
 const About = () => {
@@ -16,17 +16,23 @@ const About = () => {
   return (
     <>
       <Container className="py-4">
-        <Row>
+        <Row className="my-4">
           <Col md={6}>
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
-              <h3 className="mt-3 animate-slide-up" >Scalable Solutions for</h3>
-              <h3 className="mb-3 animate-slide-up" >Ambitious Business</h3>
-              <p className="my-4"> 
+              <h3 className="animate-slide-up">
+                Scalable Solutions for Ambitious Business
+              </h3>
+              {/* <h3 className=" animate-slide-up" ></h3> */}
+              <p>
                 At Driftmark Technology, we understand that innovative
                 businesses like yours can't afford to be held back by IT
                 obstacles. That's why we're dedicated to providing top-notch
-                software development services that drive growth and success.
+                software development services that drive growth and success. Our
+                solutions provide data-driven insights to inform strategic
+                business decisions, and lay the foundation for a future-proof
+                technology infrastructure that drives sustained growth and
+                success.
               </p>
             </div>
           </Col>
@@ -36,7 +42,6 @@ const About = () => {
                 src={Aboutimg}
                 fluid
                 rounded
-                
                 // className="image-responsive"
                 // style={{width:'400px',height:'250px'}}
                 style={{
@@ -58,13 +63,16 @@ const About = () => {
         </Row>
       </Container>
       {/* <SolutionsPage /> */}
-      <Container
-      className="my-2"
-      >
-        <div className="text-center py-5 px-2 shadow"
-        style={{ backgroundColor: " rgb(246, 212, 140)", borderRadius: "10px" }}>
-          <h3 className="mt-3">About Our Expert Team</h3>
-          <p className="my-3">
+      <Container className="my-4 py-4">
+        <div
+          className="text-center py-4 px-2 shadow"
+          style={{
+            backgroundColor: " rgb(246, 212, 140)",
+            borderRadius: "10px",
+          }}
+        >
+          <h3 className="my-3">About Our Expert Team</h3>
+          <p>
             Whether you're looking to enhance your online presence, streamline
             operations, or develop a custom mobile app, we've got you covered.
             Our mission is to keep your business moving forward, no matter what
@@ -73,19 +81,31 @@ const About = () => {
           </p>
         </div>
       </Container>
-      <Container className="my-5">
+      <Container className="my-4 py-4">
         <Row >
           <Col md={4}>
-          <h3>Cybersecurity</h3>
-          <p>Our cybersecurity experts help enterprises protect their sensitive data, prevent cyber threats, and ensure compliance with regulatory requirements.</p>
+            <h3 className="my-3">Cybersecurity</h3>
+            <p>
+              Our cybersecurity experts help enterprises protect their sensitive
+              data, prevent cyber threats, and ensure compliance with regulatory
+              requirements.
+            </p>
           </Col>
           <Col md={4}>
-          <h3>IT Consulting</h3>
-          <p>We provide expert guidance and support to help enterprises make informed technology decisions, optimize their IT infrastructure, and ensure seamless integration with existing systems.</p>
+            <h3 className="my-3">IT Consulting</h3>
+            <p>
+              We provide expert guidance and support to help enterprises make
+              informed technology decisions, optimize their IT infrastructure,
+              and ensure seamless integration with existing systems.
+            </p>
           </Col>
           <Col md={4}>
-          <h3>Custom Solutions</h3>
-          <p>Our team develops tailored software solutions that meet the unique needs of enterprises, improving operational efficiency, reducing costs, and enhancing customer experiences.</p>
+            <h3 className="my-3">Custom Solutions</h3>
+            <p>
+              Our team develops tailored software solutions that meet the unique
+              needs of enterprises, improving operational efficiency, reducing
+              costs, and enhancing customer experiences.
+            </p>
           </Col>
         </Row>
       </Container>

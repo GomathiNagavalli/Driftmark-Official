@@ -23,19 +23,22 @@ const Enterprise = () => {
   return (
     <>
       <Container className="py-4">
-        <Row>
+        <Row className="my-4">
           <Col md={6}>
-            <h3 className="mt-3 animate-slide-up" >
-              Commercial Solutions
-            </h3>
+            <h3 className="animate-slide-up">Commercial Solutions</h3>
 
-            <p className="my-4">
+            <p>
               At Driftmark Technology, we understand the complexities of
               enterprise environments and the need for scalable, secure, and
               efficient solutions. Our team of experts works closely with
               enterprises to design, develop, and implement customized solutions
               that drive business growth, improve operational efficiency, and
-              enhance customer experiences.
+              enhance customer experiences. We leverage cutting-edge
+              technologies, including cloud computing, artificial intelligence,
+              and the Internet of Things (IoT), to create innovative solutions
+              that address specific business challenges. By partnering with us,
+              enterprises can tap into our expertise and gain a competitive edge
+              in their respective markets.
             </p>
           </Col>
           <Col md={6} className="animate-zoom-in">
@@ -64,11 +67,11 @@ const Enterprise = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="mt-4 shadow bg-light py-5 px-2">
-        <Row className=" ">
+      <Container className="my-4 shadow bg-light py-4 px-2">
+        <Row>
           <Col>
             <div className="text-center ">
-              <h3 className="my-2"> Digital Transformation</h3>
+              <h3 className="my-3"> Digital Transformation</h3>
               <p>
                 We help enterprises navigate the digital landscape by developing
                 strategies, designing solutions, and implementing technologies
@@ -95,10 +98,10 @@ const Enterprise = () => {
         </div>
       </Container>
 
-      <Container className="my-5">
+      <Container className="py-4 my-4">
         <Row>
           <Col md={4}>
-            <h3>Flutter MobileApp Development</h3>
+            <h3 className="my-3">Flutter MobileApp Development</h3>
             <p>
               Flutter is an open-source mobile app development framework created
               by Google. It allows developers to build natively compiled
@@ -106,7 +109,7 @@ const Enterprise = () => {
             </p>
           </Col>
           <Col md={4}>
-            <h3>Technologies In Fingertip</h3>
+            <h3 className="my-3">Technologies In Fingertip</h3>
             <p>
               {" "}
               Frontend frameworks like React, Angular, and Vue.js enable
@@ -119,7 +122,7 @@ const Enterprise = () => {
           </Col>
 
           <Col nd={4}>
-            <h3>Experts In FullStack Development</h3>
+            <h3 className="my-3">Experts In FullStack Development</h3>
             <p>
               Designing and developing the user interface and user experience
               (UI/UX) using frontend technologies like HTML, CSS, and

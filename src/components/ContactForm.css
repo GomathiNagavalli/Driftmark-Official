@@ -1,30 +1,26 @@
-
 .form-container {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  color: #000;
+}
+
+
+
+
+/* .form-container {
     
   border: 1px solid transparent;
   padding: 20px;
   border-radius: 10px;
   position: relative;
-  /* background: linear-gradient(to right, white, white) padding-box, 
-              linear-gradient(to right, skyblue, blue) border-box; */
-  /* animation: borderAnimation 3s linear infinite; */
-}
-
-/* @keyframes borderAnimation {
-  0% {
-    background: linear-gradient(to right, white, white) padding-box, 
-                linear-gradient(to right, skyblue, rgb(81, 81, 174)) border-box;
-  }
-  50% {
-    background: linear-gradient(to right, white, white) padding-box, 
-                linear-gradient(to left, skyblue,rgb(81, 81, 174)) border-box;
-  }
-  100% {
-    background: linear-gradient(to right, white, white) padding-box, 
-                linear-gradient(to right, skyblue, rgb(81, 81, 174)) border-box;
-  }
+ 
 } */
-
 
 
 
