@@ -90,7 +90,7 @@ const Solutions = () => {
 
       <Container className="my-4">
         <Row>
-          <Col md={6} className="my-2 animate-fade-in">
+          <Col md={6} className=" animate-fade-in">
             <h3 className="fw-bold my-3">Transparent Fees for Total Clarity</h3>
             <p className="text-muted">
               When unexpected IT issues arise, the last thing you need is a
@@ -99,7 +99,7 @@ const Solutions = () => {
               you can budget with confidence and focus on what matters most.
             </p>
           </Col>
-          <Col md={6} className="my-2 animate-fade-in">
+          <Col md={6} className=" animate-fade-in">
             <h3 className="fw-bold my-3">The Driftmark Difference</h3>
             <p className="text-muted">
               At Driftmark, expertise and experience come together to deliver
@@ -111,8 +111,8 @@ const Solutions = () => {
         </Row>
       </Container>
 
-      <Container className="my-4">
-        <Row className="my-2 bg-light py-4 px-1 shadow rounded animate-slide-up">
+      <Container className="my-5">
+        <Row className="my-4 bg-light py-4 px-1 shadow rounded animate-slide-up">
           <Col md={6}>
             <h3 className="fw-bold my-3">Building Dynamic Web Applications</h3>
             <p className="text-muted">

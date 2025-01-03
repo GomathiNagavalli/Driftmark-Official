@@ -10,7 +10,7 @@ import coursalNew from "../assets/courosalNew.jpg";
 const SolutionsPage = () => {
   return (
     <>
-      <Container className="my-2 py-5 shadow bg-light">
+      <Container className="my-4 py-4 shadow bg-light">
         <div className="text-center my-3">
         <h3 className="fw-bold mt-3">
           Tailored Solutions to Meet Your
@@ -26,9 +26,9 @@ const SolutionsPage = () => {
           results you need to drive your business forward.
         </p>
 
-        <Row className="justify-content-center align-items-center my-3">
+        <Row className="justify-content-center align-items-center my-4">
           {/* <div className="text-center"> */}
-          <Col lg={10}>
+          <Col lg={10} className="my-4">
             <Carousel>
               <Carousel.Item>
                 <Image
