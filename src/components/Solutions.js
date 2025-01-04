@@ -24,7 +24,7 @@ const Solutions = () => {
         {/* <h2 className="fw-bold display-4 my-2 animate-fade-in text-md-start" >
           Let Us Bring Your Product to Life
         </h2> */}
-        <h1 className="fw-bold display-4 my-3 animate-fade-in text-md-start">
+        <h1 className="fw-bold display-4  animate-fade-in text-md-start">
           Expert Software Development & Consulting Services
         </h1>
 
@@ -34,7 +34,7 @@ const Solutions = () => {
               Expert Software Development & Consulting Services
             </h1> */}
 
-            <h3 className="animate-slide-up  d-none d-md-block">
+            <h3 className="animate-slide-up d-none d-md-block">
               Let Us Bring Your Product to Life
             </h3>
             <p className="text-muted">
@@ -51,7 +51,7 @@ const Solutions = () => {
               contribute to a more equitable and user-friendly web ecosystem.
             </p>
           </Col>
-          <Col md={6} className="text-center ">
+          <Col md={6} className="text-center">
             <Image
               src={Frontpage2}
               rounded
@@ -114,7 +114,7 @@ const Solutions = () => {
       <Container >
         <Row>
           <Col>
-          <Image src={HomeSecond} rounded fluid className="bg-light shadow" 
+          <Image src={HomeSecond} rounded fluid className="bg-light shadow my-3" 
           style={{
             width: "100%",
             // maxWidth: "500px",

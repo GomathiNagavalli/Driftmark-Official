@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
         <Col md={10}>
         
       <div>
-        <h2 className="text-center my-3"> Privacy Policy</h2>
+        <h1 className="text-center display-4 fw-bold my-3"> Privacy Policy</h1>
         <p className="text-center">
           Driftmark Technology ("we," "us," or "our") is committed to protecting
           your privacy. This Privacy Policy explains how we collect, use, and

@@ -94,7 +94,7 @@ const Enterprise = () => {
         >
           <h3 className="my-3">Aligning IT with Your Business Vision</h3>
 
-          <p>
+          <p className="my-3">
             Let's collaborate to develop a strategic IT roadmap tailored to your
             organization's unique goals. Our technical experts will help you
             bridge the gap between IT and business objectives, ensuring your
@@ -106,7 +106,7 @@ const Enterprise = () => {
       <Container className="py-4 my-4">
         <Row>
           <Col md={4}>
-          <Image src={Flutter} fluid rounded
+          <Image src={Flutter} fluid rounded className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",
@@ -127,7 +127,7 @@ const Enterprise = () => {
             </p>
           </Col>
           <Col md={4}>
-          <Image src={Fullstack} fluid rounded
+          <Image src={Fullstack} fluid rounded className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",
@@ -153,7 +153,7 @@ const Enterprise = () => {
           </Col>
 
           <Col nd={4}>
-          <Image src={TechnologyFingertip} fluid rounded
+          <Image src={TechnologyFingertip} fluid rounded className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",

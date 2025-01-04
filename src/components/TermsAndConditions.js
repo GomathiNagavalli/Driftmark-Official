@@ -4,11 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 const TermsAndConditions = () => {
   return (
     <>
-      <Container className="py-4 bg-light shadow">
+      <Container className="py-4 bg-light shadow" >
         <Row className="d-flex justify-content-center align-items-center">
           <Col md={10}>
             <div>
-              <h2 className="text-center my-3">Terms and Conditions</h2>
+              <h1 className="text-center display-4 fw-bold my-3">Terms and Conditions</h1>
               {/* <h3>Introduction</h3> */}
               <p className="text-center">
                 Welcome to Driftmark Technology, part of the Driftmark Group of

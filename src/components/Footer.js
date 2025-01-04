@@ -24,10 +24,10 @@ const Footer = () => {
           background: 'linear-gradient(to bottom, #ffffff 0%, #ffffff 30%,rgb(198, 231, 239) 100%)'
         }}
       >
-        <Row style={{ backgroundColor: "white" }}>
+        <Row style={{ backgroundColor: "skyblue" }}>
           <Col>
             <div className="text-center my-3 d-flex align-items-center justify-content-center">
-              <h1>Let Us Bring Your Product to life!</h1>
+              <h1 style={{color:'white'}}>Let Us Bring Your Product to life!</h1>
             </div>
           </Col>
         </Row>

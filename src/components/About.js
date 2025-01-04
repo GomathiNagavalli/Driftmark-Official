@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import "../components/Solutions.css";
-import Aboutimg from "../assets/Aboutimg.jpg";
+// import Aboutimg from "../assets/Aboutimg.jpg";
+import AboutSecond from '../assets/AboutSecond.jpg';
 import "../components/Solutionspage.css";
 // import SolutionsPage from "./SolutionsPage";
 import Consulting from '../assets/Consulting.jpg'
@@ -24,8 +25,11 @@ const About = () => {
             <div>
               {/* <span style={{color:'skyblue'}}>OUR ADVANTAGE</span> */}
               <h1 className="animate-slide-up display-4 fw-bold">
-                Scalable Solutions for Ambitious Business
+                For Ambitious Business
               </h1>
+              {/* Scalable Solutions  */}
+              {/* <h3 className=""></h3> */}
+
               {/* <h3 className=" animate-slide-up" ></h3> */}
               <p>
                 At Driftmark Technology, we understand that innovative
@@ -44,7 +48,7 @@ const About = () => {
           <Col  className="animate-zoom-in">
             <div className="text-center">
               <Image
-                src={Aboutimg}
+                src={AboutSecond}
                 fluid
                 rounded
                 // className="image-responsive"

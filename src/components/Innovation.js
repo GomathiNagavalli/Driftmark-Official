@@ -129,6 +129,7 @@ const Innovation = () => {
         <Row className="my-3">
           <Col md={4}>
           <Image src={MobileApp} fluid rounded 
+          className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",
@@ -149,7 +150,7 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
-          <Image src={Webdevelopment} fluid rounded 
+          <Image src={Webdevelopment} fluid rounded className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",
@@ -169,7 +170,7 @@ const Innovation = () => {
             </p>
           </Col>
           <Col md={4}>
-          <Image src={Revolution} fluid rounded 
+          <Image src={Revolution} fluid rounded className="my-3"
           style={{
             width: "100%",
             // maxWidth: "500px",
@@ -232,7 +233,7 @@ const Innovation = () => {
         <Row>
           <Col>
           
-        <Image src={InnovationSecond} rounded fluid 
+        <Image src={InnovationSecond} rounded fluid className="my-3"
         style={{
           width: "100%",
           // maxWidth: "500px",
